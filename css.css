@@ -1,0 +1,332 @@
+body, html{
+	padding-top: 0;
+	margin-top: 0;
+	font-family: 'Microsoft Yi Baiti', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	height: 100%;
+}
+@font-face {
+	font-family: 'hagin';
+	src: url('fonts/hagincapsmedium-webfont.eot');
+	src: url('fonts/hagincapsmedium-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/hagincapsmedium-webfont.ttf') format('truetype'),
+		 url('fonts/hagincapsmedium-webfont.svg#hagin_caps_mediumregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+#navi{
+	width: 150px;
+	margin: 0 20px;
+	padding: 0 10px;
+	background-color: #f1f1f1;
+	height: 100%;
+	text-align: center;
+	float: left;
+	position: fixed;
+}
+#content{
+	margin-left: 210px;
+	padding-bottom: 20px;
+
+}
+#name{
+	padding-top: 20px;
+	padding-bottom: 10px;
+	margin: 0 auto;
+}
+#links{
+	margin: 0px;
+	padding: 5px 0 0 5px;
+	list-style-type: none;
+	font-family: hagin, 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+	color: #535353;
+	font-size: 25px;
+	line-height: 50px;
+}
+#minilinks{
+	margin: 0px;
+	padding: 40px 0 5px;
+	font-size: 1.25em;
+	list-style-type: none;
+	font-family: Microsoft Yi Baiti, 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+	color: #555555;
+}
+p{
+	margin-top: 2px;
+}
+#content a{
+	color: #56a8a5;
+	text-decoration: none;
+}
+#minilinks a, #links a{
+	color: #5c5c5c;
+	text-decoration: none;
+}
+#links li, #minilinks li{
+	color: #56a8a5;
+}
+#links a:hover, #minilinks a:hover, #content a:hover{
+	border-bottom: 2px dotted #9ce3e0;
+}
+#minilinks ul{
+	padding-left: 20px;
+}
+#minilinks li{
+	display: inline;
+	margin-right: 15px;
+}
+#content h1{
+	font-size: 30px;
+	font-family: hagin, 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+	color: #515151;
+	font-weight: normal;
+	margin: 10px 0px 10px;
+}
+#content h2{
+	font-family: hagin, 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+	font-size: 25px;
+	font-weight: normal;
+	color: #535353;
+	margin-bottom: 5px;
+}
+#content h3{
+	font-size: 20px;
+	font-family: 'Microsoft Yi Baiti', 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+	color: #8dc8c6;
+	font-weight: normal;
+	margin: 0px;
+}
+ #content h4{
+	font-size: 14px;
+	font-family: 'Microsoft Yi Baiti', 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+	color: #8dc8c6;
+	font-weight: normal;
+	margin: 0px;
+	font-style: italic;
+}
+#content em{
+	color: #8dc8c6;	
+}
+
+/* Homepage */
+
+#homepage #content img, #projects #content img{
+	border: 15px solid #f1f1f1;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+#homepage #content div, #projects #content div{
+	background-color: #f1f1f1;	
+	max-width: 300px;
+	padding: 10px;
+	margin: 0 10px 10px 0;
+	float: left;
+}
+#homepage #content p, #projects #content p{
+	margin-bottom: 10px;
+}
+/* About Me Pages */
+
+.aboutme #content div{
+	background-color: #f1f1f1;	
+	max-width: 800px;
+	padding: 2px 10px;
+	margin-bottom: 10px;
+	margin-right: 20px;
+}
+
+.aboutme #content h2{
+	margin-top: 5px;
+}
+
+.aboutme #content p{
+	margin-bottom: 10px;
+}
+.aboutme #content p:last-child{
+	margin-bottom: 5px;
+}
+
+/* Contact */
+#contact{
+	font-family: hagin, 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+	color: #535353;
+	font-size: 20px;
+	font-weight: normal;
+	position: absolute; 
+	bottom: 29px; 
+}
+#contact a{
+	font-family: 'Microsoft Yi Baiti', 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+	color: #535353;
+	font-size: 19px;
+	font-weight: normal;
+	text-decoration: none;
+	margin: 0;
+}
+#contact a:hover{
+	font-family: 'Microsoft Yi Baiti', 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+	color: #535353;
+	font-size: 19px;
+	font-weight: normal;
+	text-decoration: none;
+	margin: 0;
+	border-bottom: 2px dotted #9ce3e0;
+}
+
+/* Resume Formatting */
+#resume #skill li{
+	list-style-type: none;
+	margin: 10px;
+}
+#resume dl{
+	margin-top: 0;
+}
+#resume #content div{
+	background-color: #f1f1f1;	
+	max-width: 720px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+#resume #skill{
+	margin: 0;
+	padding: 0;
+}
+#resume dd ul{
+	margin-top: 0;
+}
+#resume #content #resumename{
+	background-color: #ffffff;
+	margin: 0;
+}
+#resume #content #resumename h1{
+	font-size: 50px;
+}
+#resume #content h2{
+	margin: 0;
+}
+
+/* Projects Formatting */
+#projects #content p{
+	margin-bottom: 10px;
+}
+#projects #content p:last-child{
+	margin-bottom: 5px;
+}
+#content .item{
+	overflow: auto;
+	padding-bottom: 10px;
+}
+#content .item img, #content .item iframe{
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	border: 15px solid #f1f1f1;
+	background-color: #f1f1f1;		
+}
+#content .desc{
+	background-color: #f1f1f1;
+	padding: 2px 10px;
+	width: 280px;
+	margin-bottom: 20px;
+	float: left;
+}
+#content .desc p{
+	margin-bottom: 10px;
+}
+#content .desc p:last-child{
+	margin-bottom: 5px;
+}
+#content .desc h1{
+	font-family: hagin, 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+	font-size: 25px;
+	font-weight: normal;
+	color: #535353;
+	margin-bottom: 5px;
+}
+#content .desc h2{
+	font-size: 20px;
+	font-family: 'Microsoft Yi Baiti', 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+	color: #8dc8c6;
+	font-weight: normal;
+	margin: 0px;
+}
+#content .slider-wrapper img{
+	border: none;
+}
+.slider-wrapper{
+	margin-bottom: 10px;
+}
+#content .slider-direction-nav a:hover, #content .slider-control-nav a:hover{
+	color: #8dc8c6;
+}
+#content .slider-wrapper{
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+/* Icon Page */
+.icons #content img{
+	border: 10px solid #f1f1f1;
+	background-color: #f1f1f1;
+}
+.icons #content div{
+	background-color: #f1f1f1;	
+	max-width: 280px;
+	padding: 2px 10px;
+	margin: 5px 0 15px 0;
+}
+.icons #content p{
+	margin-bottom: 5px;
+}
+
+/* Back To Topper */
+#content #bottom{
+	background-color: #8dc8c6;
+	padding: 5px;
+	position: fixed; 
+	bottom: 30px; 
+	right: 0;
+	cursor: pointer;
+	display: none;
+	opacity: 0.6;
+	-moz-transition: opacity 250ms;
+	-webkit-transition: opacity 250ms;
+	transition: opacity 250ms;
+	margin-right: 0;
+}
+#bottom a{
+	color: #fff;
+}
+#content #bottom:hover{
+	opacity: 1;
+}
+
+/* Size */
+@media screen and (max-width: 1060px) {
+	#uiux #content .desc, #branding #content #soijun{
+		background-color: #f1f1f1;
+		padding: 2px 5px;
+		width: 510px;
+		margin-bottom: 20px;
+		float: left;
+	}
+	#projects #content div{
+		background-color: #f1f1f1;	
+		max-width: 510px;
+		padding: 10px;
+		margin: 0 10px 10px 0;
+		float: left;
+	}
+}
+@media screen and (max-width: 1180px) {
+	#other #content #book, #other #content #film{
+		background-color: #f1f1f1;
+		padding: 2px 5px;
+		width: 578px;
+		margin-bottom: 20px;
+		float: left;
+}
+}

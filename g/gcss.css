@@ -1,0 +1,76 @@
+body, html{
+	padding-top: 0;
+	margin-top: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 15px;
+}
+body{
+	overflow-y: scroll;
+}
+#holdingcontainer{
+	margin: 0 auto;
+	overflow: hidden;
+	width: 825px;
+}
+#navi{
+	width: 130px;
+	padding: 0 45px;
+	position: fixed;
+}
+#name{
+	background-color: #000;
+	padding-top: 150px;
+	margin: 0 auto;
+	position: bottom;
+}
+#links, #contact{
+	margin: 0px;
+	padding-top: 5px;
+	padding-left: 5px;
+	list-style-type: none;
+	font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+}
+ul li ul, dl dd{
+	margin: 0px;
+	padding-top: 2px;
+	padding-left: 20px;
+	list-style-type: none;
+	font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+}
+ul li, dl dt{
+	color: #389CDF;
+}
+a{
+	color: #000;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+#content{
+	float: right;
+	width: 560px;
+	padding: 150px 0 30px 30px;
+}
+#content h1{
+	font-size: 30px;
+	font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+	color: #389CDF;
+}
+#content h2{
+	font-size: 20px;
+	font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+	margin-top: 50px;
+	margin-bottom: 5px;
+	color: #389CDF;
+}
+#goose, #cartoon{
+	overflow: hidden;
+}
+#goose img, #cartoon img{
+	float: left;
+	padding-right: 10px;
+}
+#graph{
+	text-align: center;
+}
