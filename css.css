@@ -2,7 +2,7 @@ body, html{
 	padding-top: 0;
 	margin-top: 0;
 	font-family: 'Microsoft Yi Baiti', Helvetica, Arial, sans-serif;
-	font-size: 18px;
+	font-size: 14px;
 	height: 100%;
 }
 @font-face {
@@ -97,7 +97,7 @@ p{
 	margin: 0px;
 }
  #content h4{
-	font-size: 18px;
+	font-size: 14px;
 	font-family: 'Microsoft Yi Baiti', 'Open Sans Condensed', Helvetica, Arial, sans-serif;
 	color: #8dc8c6;
 	font-weight: normal;
