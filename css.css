@@ -286,7 +286,7 @@ h2 {
 	vertical-align: middle;
 }
 #blips {
-	width: 274px;
+	width: 279px;
 }
 #blips .blip {
 	margin-bottom: 15px;
@@ -295,13 +295,16 @@ h2 {
 #blips .blip a {
 	vertical-align: middle;
 }
+#blips .blip a {
+	margin-left: 10px;
+}
 #contactform {
-	width: 381px;
+	width: 376px;
 	text-align: center;
 }
 #contactform .title {
 	text-align: left;
-	margin-left: 40px;
+	margin-left: 38px;
 	font-size: 20px;
 	text-transform: uppercase;
 	font-family: hagin, 'Open Sans Condensed', Helvetica, Arial, sans-serif;
@@ -328,7 +331,7 @@ h2 {
 }
 #contactform .submit-area input[type="submit"] {
 	margin: 10px 4px;
-	margin-right: 41px;
+	margin-right: 38px;
 	cursor: pointer;
 }
 
@@ -369,6 +372,8 @@ h2 {
 
 #resume {
 	max-width: 800px;
+	padding-bottom: 30px;
+	height: auto;
 }
 #resume h3, #resume h4 {
 	font-family: 'Microsoft Yi Baiti', Helvetica, Arial, sans-serif;
