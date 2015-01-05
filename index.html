@@ -5,55 +5,390 @@
 		<title>Winona So</title>
 		<link rel="stylesheet" href="css.css">
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-        <link rel="stylesheet" href="slider/style.css" type="text/css" media="screen" />
-    	<script src="scripts/modernizr-2.6.1.min.js"></script>
-        
-        <link rel="stylesheet" href="lean-slider.css" type="text/css" />
-    	<link rel="stylesheet" href="slider/sample-styles.css" type="text/css" />
 	</head>
 	<body id="homepage">
 		<div id="navi">
-			<div id="name">
-				<a href="index.html"><img src="name.png"></a>
-			</div>
-			<ul id="links">
-				<li><a href="about me/aboutme.html">About Me</a></li>
-				<li><a href="projects/projects.html">Projects</a></li>
-				<li><a href="resume/resume.html">R&eacute;sum&eacute;</a></li>
-			</ul>
-			<div id="contact">
-				Contact Me
-				<a href="mailto:win@winonaso.com">win@winonaso.com</a>
-			</div>
+			<div class="bar"></div>
+			<div class="info">
+				<a href="#aboutme">
+					about me
+				</a>
+				<a href="#projects">
+					projects
+				</a>
+				<a href="index.html" class="logo">
+					<img src="images/name.png" />
+				</a>
+				<a href="#contactme">
+					contact me
+				</a>
+				<a href="#resumepage">
+					r&eacute;sum&eacute;
+				</a>
 			</div>
 		</div>
-		<div id="content">
-			<ul id="minilinks">
-			</ul>
-			<h1>Hi!</h1>
-			<img id="me" src="me.png">
+
+		<div id="header">
+			<img src="images/header/header1.png" />
+			<img src="images/header/header2.png" />
+			<img src="images/header/header3.png" />
+			<img src="images/header/header4.png" class="selected" />
+			<div class="header-text">
+				<div class="name">
+					Winona So
+				</div>
+				<div class="interests">
+					UI &amp; UX Designer | Baking Enthusiast | Gamer
+				</div>
+			</div>
+		</div>
+
+		<div id="aboutme" class="section">
+			<img src="images/me.png" />
 			<div>
-				<p>Thanks for visiting me! I'm Winona and this is my website. Here you can find a collection of UI/UX work I've done, a large number of illustrations, as well as some information on who I am. </p>
-				<p>I love designing and learning new things, and most importantly, I love what I do.</p>
-				<p>The links on the left will lead you to the major sections of the website, and more specialized links will appear across the top.</p>
-				<p>I'd suggest taking a look at my <a href="projects/uiux.html">UI & UX work</a>. I've added bunch of new projects and images there, so go ahead!</p>
+				<h1>about me</h1>
+				<p>Hi! I’m a recent University of Waterloo English and Business graduate, specializing in Digital Arts Communication. I am highly motivated, and passionate about what I do.</p>
+				<p>My tools of the trade are Adobe Photoshop and Adobe Indesign. I also have some experience working with Adobe Illustrator, as well as HTML and CSS.</p>
+				<p>Although I primarily love working on front end design, I also have experience in wireframe and workflow prototyping, copywriting, social media presence, and video production as well.</p>
+			</div>
+		</div>
+
+		<div id="projects" class="section">
+			<h1>Featured Project</h1>
+			<div class="project selected">
+				<div class="main-image-container">
+					<div class="left-arrow"></div>
+					<div class="right-arrow"></div>
+					<div class="main-image">
+						<div class="image-container">
+							<img src="projects/uiux/ticket/tick.png" />
+						</div>
+						<div class="image-container">
+							<img src="projects/uiux/ticket/tick2.png" />
+						</div>
+						<div class="image-container">
+							<img src="projects/uiux/ticket/tick3.png" />
+						</div>
+					</div>
+				</div>
+				<div class="thumbnails">
+					<img src="projects/uiux/ticket/tickth.png" />
+					<img src="projects/uiux/ticket/tick2th.png" />
+					<img src="projects/uiux/ticket/tick3th.png" />
+				</div>
+				<div class="info">
+					<h1>Ticketing Mobile Application</h1>
+					<h2>Freelance mockup</h2>
+					<p>A mobile application mockup for a ticketing application - the company's brand has been edited out for privacy reasons, and the application fell through due to lack of development. The initial mockups for the application are as shown.</p>
+				</div>
+			</div>
+
+			<div class="project">
+				<div class="main-image-container">
+					<div class="left-arrow"></div>
+					<div class="right-arrow"></div>
+					<div class="main-image">
+						<div class="image-container">
+							<img src="projects/brand/croissants.png" />
+						</div>
+					</div>
+				</div>
+				<div class="info">
+					<h1>Croissants</h1>
+					<p>Designed a logo for a croissant review company.</p>
+				</div>
+			</div>
+
+			<div class="project">
+				<div class="main-image-container">
+					<div class="left-arrow"></div>
+					<div class="right-arrow"></div>
+					<div class="main-image">
+						<div class="image-container">
+							<img src="projects/brand/bottles.png" />
+						</div>
+					</div>
+				</div>
+				<div class="info">
+					<h1>Water Bottles</h1>
+					<p>Designed water bottles that were sold in the Lower Mainland.</p>
+				</div>
+			</div>
+
+			<div class="project">
+				<div class="main-image-container">
+					<div class="left-arrow"></div>
+					<div class="right-arrow"></div>
+					<div class="main-image">
+						<div class="image-container">
+							<img src="projects/brand/chanty.png" />
+						</div>
+					</div>
+				</div>
+				<div class="info">
+					<h1>Chanty Logo</h1>
+					<p>Designed a logo for a bamboo-based product.</p>
+				</div>
+			</div>
+
+			<div class="project">
+				<div class="main-image-container">
+					<div class="left-arrow"></div>
+					<div class="right-arrow"></div>
+					<div class="main-image">
+						<div class="image-container">
+							<img src="projects/brand/findabed.png" />
+						</div>
+					</div>
+				</div>
+				<div class="info">
+					<h1>Find a Bed Logo</h1>
+					<p>Designed a logo for a bed locating service.</p>
+				</div>
+			</div>
+
+			<div class="project">
+				<div class="main-image-container">
+					<div class="left-arrow"></div>
+					<div class="right-arrow"></div>
+					<div class="main-image">
+						<div class="image-container">
+							<img src="projects/brand/pear.png" />
+						</div>
+					</div>
+				</div>
+				<div class="info">
+					<h1>Scholarpair Logo</h1>
+					<p>Designed a logo for a mobile application that paired up students with professors that best suited their learning style.</p>
+				</div>
+			</div>
+
+			<div class="project">
+				<div class="main-image-container">
+					<div class="left-arrow"></div>
+					<div class="right-arrow"></div>
+					<div class="main-image">
+						<div class="image-container">
+							<img src="projects/layouts/finalf1.png" />
+						</div>
+						<div class="image-container">
+							<img src="projects/layouts/finalf2.png" />
+						</div>
+					</div>
+				</div>
+				<div class="thumbnails">
+					<img src="projects/layouts/final1th.png" />
+					<img src="projects/layouts/final2th.png" />
+				</div>
+				<div class="info">
+					<h1>Final Four Layout</h1>
+					<h2>Imprint newspaper</h2>
+				</div>
+			</div>
+
+			<div class="project">
+				<div class="main-image-container">
+					<div class="left-arrow"></div>
+					<div class="right-arrow"></div>
+					<div class="main-image">
+						<div class="image-container">
+							<img src="projects/layouts/mario.png" />
+						</div>
+					</div>
+				</div>
+				<div class="info">
+					<h1>Layout Gaming Column Layout</h1>
+					<h2>Imprint newspaper</h1>
+				</div>
+			</div>
+
+			<div class="project">
+				<div class="main-image-container">
+					<div class="left-arrow"></div>
+					<div class="right-arrow"></div>
+					<div class="main-image">
+						<div class="image-container">
+							<img src="projects/layouts/election.png" />
+						</div>
+					</div>
+				</div>
+				<div class="info">
+					<h1>Election Debate Layout</h1>
+					<h2>Imprint newspaper</h1>
+				</div>
+			</div>
+
+			<div class="project">
+				<div class="main-image-container">
+					<div class="left-arrow"></div>
+					<div class="right-arrow"></div>
+					<div class="main-image">
+						<div class="image-container">
+							<img src="projects/illu/johnorpheus.png" />
+						</div>
+						<div class="image-container">
+							<img src="projects/illu/johnorpheus2.png" />
+						</div>
+					</div>
+				</div>
+				<div class="thumbnails">
+					<img src="projects/illu/joth.png" />
+					<img src="projects/illu/jo2th.png" />
+				</div>
+				<div class="info">
+					<h1>John Orpheus Illustration</h1>
+				</div>
+			</div>
+
+			<div class="project">
+				<div class="main-image-container">
+					<div class="left-arrow"></div>
+					<div class="right-arrow"></div>
+					<div class="main-image">
+						<div class="image-container">
+							<img src="projects/illu/lion.png" />
+						</div>
+					</div>
+				</div>
+				<div class="info">
+					<h1>King Warrior</h1>
+				</div>
+			</div>
+
+			<div class="project">
+				<div class="main-image-container">
+					<div class="left-arrow"></div>
+					<div class="right-arrow"></div>
+					<div class="main-image">
+						<div class="image-container">
+							<img src="projects/illu/fresh15.png" />
+						</div>
+					</div>
+				</div>
+				<div class="info">
+					<h1>Freshman 15 Illustration</h1>
+				</div>
+			</div>
+
+			<div class="project">
+				<div class="main-image-container">
+					<div class="left-arrow"></div>
+					<div class="right-arrow"></div>
+					<div class="main-image">
+						<div class="image-container">
+							<img src="projects/illu/sj.png" />
+						</div>
+					</div>
+				</div>
+				<div class="info">
+					<h1>Steve Jobs</h1>
+				</div>
+			</div>
+
+			<div class="project">
+				<div class="main-image-container">
+					<div class="left-arrow"></div>
+					<div class="right-arrow"></div>
+					<div class="main-image">
+						<div class="image-container">
+							<img src="projects/illu/totoro.png" />
+						</div>
+					</div>
+				</div>
+				<div class="info">
+					<h1>Totoro</h1>
+				</div>
+			</div>
+
+
+		</div>
+
+		<div id="project-select" class="section">
+			<div class="categories">
+				<div class="category selected" data-category-name="all">All
+				</div>
+				<div class="category" data-category-name="ui">UI/UX
+				</div>
+				<div class="category" data-category-name="brand">Branding
+				</div>
+				<div class="category" data-category-name="layout">Print Layouts
+				</div>
+				<div class="category" data-category-name="illu">Illustrations
+				</div>
+			</div>
+			<div class="images">
+				<img src="projects/uiux/ticket/tickp.png" class="ui brand" />
+				<img src="projects/brand/croissantsp.png" class="brand" />
+				<img src="projects/brand/bottlesp.png" class="brand" />
+				<img src="projects/brand/chantyp.png" class="brand" />
+				<img src="projects/brand/findabedp.png" class="brand" />
+				<img src="projects/brand/pearp.png" class="brand" />
+				<img src="projects/layouts/finalp.png" class="layout" />
+				<img src="projects/layouts/mariop.png" class="layout" />
+				<img src="projects/layouts/electionp.png" class="layout" />
+				<img src="projects/illu/johnorpheusp.png" class="illu" />
+				<img src="projects/illu/lionp.png" class="illu" />
+				<img src="projects/illu/fresh15p.png" class="illu" />
+				<img src="projects/illu/sjp.png" class="illu" />
+				<img src="projects/illu/totorop.png" class="illu" />
+
+			</div>
+		</div>
+
+		<div id="contactme" class="section">
+			<div id="blips">
+				<div class="blip">
+					<img src="contact/email.png" />
+					<a href="mailto:win@winonaso.com?Subject=MailTo" target="_top">win@winonaso.com</a>
+				</div>
+				<div class="blip">
+					<img src="contact/wordpress.png" />
+					<a href="//www.winonaso.wordpress.com">www.winonaso.wordpress.com</a>
+				</div>
+				<div class="blip">
+					<img src="contact/linkedin.png" />
+					<a href="//ca.linkedin.com/pub/winona-so/5a/698/8a6/">Winona So</a>
+				</div>
+			</div>
+			<form id="contactform" action="mailto:win@winonaso.com">
+				<div class="title">
+					contact me
+				</div>
+				<input type="text" placeholder="Subject" name="subject" />
+				<textarea placeholer="Your Message" name="body"></textarea>
+				<div class="submit-area">
+					<input type="submit" class="link" />
+				</div>
+			</form>
+		</div>
+
+		<div id="resumepage" class="section">
+			<div>
+				<h1>resume</h1>
+				<a href="resume/resume.html">
+					<div class="link">
+						web version
+					</div>
+				</a>
+				<a href="resume/resume.pdf">
+					<div class="link">
+						pdf version
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<div id="footer">
+			<div>
+				© 2015 Winona So
 			</div>
 			<div>
-				<i>Check out a sneak peak of the redesign!</i>
-				<p>I'm currently working on the code for it. Check back soon!</p>
-				<img id="sneakpeak" src="sneakpeak.png">
-			</div>				
-
-
-			<div id="bottom">
-			<a href="#"> Back to Top</a>
-			</div>	
-
-<!-- For closing content -->
+				All photography taken by myself.
+			</div>
 		</div>
-	
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	    <script src="lean-slider.js"></script>
-		<script src="java.js"></script>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+		<script type="text/javascript" src="js/sticky.min.js"></script>
+		<script type="text/javascript" src="js/js.js"></script>
 	</body>
 </html>

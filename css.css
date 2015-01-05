@@ -1,9 +1,15 @@
-body, html{
+body, html {
 	padding-top: 0;
 	margin-top: 0;
 	font-family: 'Microsoft Yi Baiti', Helvetica, Arial, sans-serif;
 	font-size: 15px;
 	height: 100%;
+	background-image: url("background.png");
+	margin-left: auto;
+	margin-right: auto;
+}
+body {
+	padding-top: 30px;
 }
 @font-face {
 	font-family: 'hagin';
@@ -14,330 +20,418 @@ body, html{
 	font-weight: normal;
 	font-style: normal;
 }
-#sneakpeak{
-	max-width: 300px;
-	border: none;
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-#navi{
-	width: 150px;
-	margin: 0 20px;
-	padding: 0 10px;
-	background-color: #f1f1f1;
-	height: 100%;
+a {
+	font-family: 'Microsoft Yi Baiti', Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	color: #666;
+	text-decoration: none;
+	margin: 0 5px;
+}
+a:hover {
+	border-bottom: 2px dotted #9ce3e0;
+}
+h1 {
+	font-family: hagin, 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	color: #666;
+	margin-bottom: 10px;
+	margin-top: 0px;
+}
+h2 {
+	font-family: 'Microsoft Yi Baiti', Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	color: #9ce3e0;
+	font-weight: noromal;
+}
+
+#navi {
+	font-family: 'Microsoft Yi Baiti', Helvetica, Arial, sans-serif;
+	font-size: 20px;
 	text-align: center;
-	float: left;
+	height: 95px;
+	line-height: 95px;
+	margin: 0 auto;
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 3;
+}
+#navi.stuck {
 	position: fixed;
 }
-#content{
-	margin-left: 210px;
-	padding-bottom: 20px;
+#navi .bar {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 27px;
+	bottom: 23px;
+	background-color: white;
+}
+#navi .info {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+#navi a {
+	vertical-align: middle;
+	display: inline-block;
+	line-height: normal;
+	margin: 0 15px;
+}
+#navi a.logo {
+	height: 100%;
+	width: auto;
+}
+#navi a.logo:hover {
+	border-bottom: none;
+}
+#navi a.logo img {
+	vertical-align: middle;
+	height: 100%;
+	width: auto;
+}
 
+#header {
+	margin: auto;
+	margin-bottom: 60px;
+	margin-top: 30px;
+	width: 695px;
+	height: 300px;
+	position: relative;
 }
-#name{
-	padding-top: 20px;
-	padding-bottom: 10px;
-	margin: 0 auto;
+#header img {
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	opacity: 0;
+	-webkit-transition: opacity 2s;
+	transition: opacity 2s;
 }
-#links{
-	margin: 0px;
-	padding: 5px 0 0 5px;
-	list-style-type: none;
+#header img.instant {
+	-webkit-transition: opacity 0s;
+	transition: opacity 0s;
+}
+#header img.selected {
+	opacity: 1;
+}
+#header .header-text {
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	right: 0;
+	bottom: 15px;
+	color: white;
+	text-align: center;
+}
+#header .header-text .name {
+	text-transform: uppercase;
 	font-family: hagin, 'Open Sans Condensed', Helvetica, Arial, sans-serif;
-	color: #535353;
-	font-size: 25px;
-	line-height: 50px;
-}
-#minilinks{
-	margin: 0px;
-	padding: 40px 0 5px;
-	font-size: 1.5em;
-	list-style-type: none;
-	font-family: Microsoft Yi Baiti, 'Open Sans Condensed', Helvetica, Arial, sans-serif;
-	color: #555555;
-}
-p{
-	margin-top: 2px;
-}
-#content a{
-	color: #56a8a5;
-	text-decoration: none;
-}
-#minilinks a, #links a{
-	color: #5c5c5c;
-	text-decoration: none;
-}
-#links li, #minilinks li{
-	color: #56a8a5;
-}
-#links a:hover, #minilinks a:hover, #content a:hover{
-	border-bottom: 2px dotted #9ce3e0;
-}
-#minilinks ul{
-	padding-left: 20px;
-}
-#minilinks li{
-	display: inline;
-	margin-right: 15px;
-}
-#content h1{
-	font-size: 30px;
-	font-family: hagin, 'Open Sans Condensed', Helvetica, Arial, sans-serif;
-	color: #515151;
-	font-weight: normal;
-	margin: 10px 0px 10px;
-}
-#content h2{
-	font-family: hagin, 'Open Sans Condensed', Helvetica, Arial, sans-serif;
-	font-size: 25px;
-	font-weight: normal;
-	color: #535353;
+	font-size: 35px;
 	margin-bottom: 5px;
 }
-#content h3{
-	font-size: 20px;
-	font-family: 'Microsoft Yi Baiti', 'Open Sans Condensed', Helvetica, Arial, sans-serif;
-	color: #8dc8c6;
-	font-weight: normal;
-	margin: 0px;
-}
- #content h4{
-	font-size: 14px;
-	font-family: 'Microsoft Yi Baiti', 'Open Sans Condensed', Helvetica, Arial, sans-serif;
-	color: #8dc8c6;
-	font-weight: normal;
-	margin: 0px;
-	font-style: italic;
-}
-#content em{
-	color: #8dc8c6;	
+#header .header-text .interests {
+	letter-spacing: 2px;
+	opacity: 0.8;
+	font-size: 16px;
 }
 
-/* Homepage */
 
-#homepage #content img{
+.section {
+	margin: auto;
+	background-color: #FFF;
+	padding: 20px;
+	margin-bottom: 60px;
+}
+
+/*About Me Formatting */
+#aboutme, #contactme, #resumepage, #project-select, #projects{
+	max-width: 695px;
+}
+
+#aboutme img {
 	float: left;
-	margin-right: 10px;
-	margin-bottom: 10px;
+	margin-right: 40px;
 }
 
-#projects #content img{
-	border: 15px solid #f1f1f1;
-	float: left;
-	margin-right: 10px;
-	margin-bottom: 10px;
-}
-
-#homepage #content div, #projects #content div{
-	background-color: #f1f1f1;	
-	max-width: 300px;
-	padding: 10px;
-	margin: 0 10px 10px 0;
-	float: left;
-}
-#homepage #content p, #projects #content p{
-	margin-bottom: 10px;
-}
-/* About Me Pages */
-
-.aboutme #content div{
-	background-color: #f1f1f1;	
-	max-width: 800px;
-	padding: 2px 10px;
-	margin-bottom: 10px;
-	margin-right: 20px;
-}
-
-.aboutme #content h2{
-	margin-top: 5px;
-}
-
-.aboutme #content p{
-	margin-bottom: 10px;
-}
-.aboutme #content p:last-child{
-	margin-bottom: 5px;
-}
-
-/* Contact */
-#contact{
-	font-family: hagin, 'Open Sans Condensed', Helvetica, Arial, sans-serif;
-	color: #535353;
-	font-size: 20px;
-	font-weight: normal;
-	position: absolute; 
-	bottom: 29px; 
-}
-#contact a{
-	font-family: 'Microsoft Yi Baiti', 'Open Sans Condensed', Helvetica, Arial, sans-serif;
-	color: #535353;
-	font-size: 19px;
-	font-weight: normal;
-	text-decoration: none;
-	margin: 0;
-}
-#contact a:hover{
-	font-family: 'Microsoft Yi Baiti', 'Open Sans Condensed', Helvetica, Arial, sans-serif;
-	color: #535353;
-	font-size: 19px;
-	font-weight: normal;
-	text-decoration: none;
-	margin: 0;
-	border-bottom: 2px dotted #9ce3e0;
-}
-
-/* Resume Formatting */
-#resume #skill li{
-	list-style-type: none;
-	margin: 10px;
-}
-#resume dl{
-	margin-top: 0;
-}
-#resume #content div{
-	background-color: #f1f1f1;	
-	max-width: 720px;
-	padding: 10px;
-	margin-bottom: 10px;
-}
-#resume #skill{
-	margin: 0;
-	padding: 0;
-}
-#resume dd ul{
-	margin-top: 0;
-}
-#resume #content #resumename{
-	background-color: #ffffff;
-	margin: 0;
-}
-#resume #content #resumename h1{
-	font-size: 50px;
-}
-#resume #content h2{
-	margin: 0;
+#aboutme div:after {
+	content: "";
+	clear: both;
+	display: block;
 }
 
 /* Projects Formatting */
-#projects #content p{
-	margin-bottom: 10px;
-}
-#projects #content p:last-child{
-	margin-bottom: 5px;
-}
-#content .item{
-	overflow: auto;
-	padding-bottom: 10px;
-}
-#content .item img, #content .item iframe{
-	float: left;
-	margin-right: 10px;
-	margin-bottom: 10px;
-	border: 15px solid #f1f1f1;
-	background-color: #f1f1f1;		
-}
-#content .desc{
-	background-color: #f1f1f1;
-	padding: 2px 10px;
-	width: 280px;
+#projects {
+	text-align: center;
 	margin-bottom: 20px;
-	float: left;
+	position: relative;
 }
-#content .desc p{
-	margin-bottom: 10px;
-}
-#content .desc p:last-child{
-	margin-bottom: 5px;
-}
-#content .desc h1{
-	font-family: hagin, 'Open Sans Condensed', Helvetica, Arial, sans-serif;
-	font-size: 25px;
-	font-weight: normal;
-	color: #535353;
-	margin-bottom: 5px;
-}
-#content .desc h2{
-	font-size: 20px;
-	font-family: 'Microsoft Yi Baiti', 'Open Sans Condensed', Helvetica, Arial, sans-serif;
-	color: #8dc8c6;
-	font-weight: normal;
+#projects h1, #projects h2, #projects p {
 	margin: 0px;
 }
-#content .slider-wrapper img{
-	border: none;
-}
-.slider-wrapper{
-	margin-bottom: 10px;
-}
-#content .slider-direction-nav a:hover, #content .slider-control-nav a:hover{
-	color: #8dc8c6;
-}
-#content .slider-wrapper{
-	float: left;
-	margin-right: 10px;
-	margin-bottom: 10px;
-}
-
-/* Icon Page */
-.icons #content img{
-	border: 10px solid #f1f1f1;
-	background-color: #f1f1f1;
-}
-.icons #content div{
-	background-color: #f1f1f1;	
-	max-width: 280px;
-	padding: 2px 10px;
-	margin: 5px 0 15px 0;
-}
-.icons #content p{
-	margin-bottom: 5px;
-}
-
-/* Back To Topper */
-#content #bottom{
-	background-color: #8dc8c6;
-	padding: 5px;
-	position: fixed; 
-	bottom: 30px; 
+#projects .project {
+	position: absolute;
+	top: 42px;
+	left: 0;
 	right: 0;
-	cursor: pointer;
-	display: none;
-	opacity: 0.6;
-	-moz-transition: opacity 250ms;
-	-webkit-transition: opacity 250ms;
-	transition: opacity 250ms;
-	margin-right: 0;
+	opacity: 0;
+	pointer-events: none;
+	-webkit-transition: opacity 1s;
+	transition: opacity 1s;
 }
-#bottom a{
-	color: #fff;
-}
-#content #bottom:hover{
+#projects .project.selected {
+	pointer-events: auto;
 	opacity: 1;
 }
+#projects .project .main-image-container {
+	position: relative;
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: 0;
+	width: 655px;
+	margin: 10px auto;
+}
+#projects .project .main-image-container .left-arrow,
+#projects .project .main-image-container .right-arrow {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 32px;
+	height: 32px;
+	z-index: 1;
+}
+#projects .project .main-image-container .left-arrow {
+	left: 0;
+	background-image: url('images/on-left.png');
+}
+#projects .project .main-image-container .left-arrow.disabled {
+	cursor: auto;
+	background-image: url('images/off-left.png');
+}
+#projects .project .main-image-container .right-arrow {
+	right: 0;
+	background-image: url('images/on-right.png');
+}
+#projects .project .main-image-container .right-arrow.disabled {
+	cursor: auto;
+	background-image: url('images/off-right.png');
+}
+#projects .project .main-image {
+	-webkit-transition: transform 0.5s;
+	transition: transform 0.5s;
+}
+#projects .project .main-image .image-container {
+	width: 655px;
+	display: inline-block;
+}
+#projects .project .thumbnails img {
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+}
+#projects .project .thumbnails img.selected {
+	cursor: auto;
+	border: 2px solid #9ce3e0;
+}
+#projects .project .info {
+	text-align: left;
+	width: 655px;
+	margin: auto;
+}
 
-/* Size */
-@media screen and (max-width: 1060px) {
-	#uiux #content .desc, #branding #content #soijun{
-		background-color: #f1f1f1;
-		padding: 2px 5px;
-		width: 510px;
-		margin-bottom: 20px;
-		float: left;
-	}
-	#projects #content div{
-		background-color: #f1f1f1;	
-		max-width: 510px;
-		padding: 10px;
-		margin: 0 10px 10px 0;
-		float: left;
-	}
+#project-select .categories {
+	margin-bottom: 10px;
+	text-align: center;
 }
-@media screen and (max-width: 1180px) {
-	#other #content #book, #other #content #film{
-		background-color: #f1f1f1;
-		padding: 2px 5px;
-		width: 578px;
-		margin-bottom: 20px;
-		float: left;
+#project-select .category {
+	cursor: pointer;
+	display: inline-block;
+	text-transform: uppercase;
+	margin: 0 15px;
 }
+#project-select .category.selected,
+#project-select .category:hover {
+	border-bottom: 2px dotted #9ce3e0;
+}
+#project-select img {
+	cursor: pointer;
+	margin-bottom: 5px;
+}
+#project-select img.hide {
+	display: none;
+}
+
+/* Contact Me */
+#contactme {
+	font-size: 0;
+}
+#blips,
+#contactform {
+	display: inline-block;
+	vertical-align: middle;
+}
+#blips {
+	width: 274px;
+}
+#blips .blip {
+	margin-bottom: 15px;
+}
+#blips .blip img,
+#blips .blip a {
+	vertical-align: middle;
+}
+#contactform {
+	width: 381px;
+	text-align: center;
+}
+#contactform .title {
+	text-align: left;
+	margin-left: 40px;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: hagin, 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+}
+#contactform input[type="text"] {
+	width: 300px;
+	font-size: 10px;
+	margin: 10px 4px;
+	border: 1px solid #9ce3e0;
+	padding: 5px;
+}
+#contactform textarea {
+	border: 1px solid #9ce3e0;
+	font-size: 18px;
+	margin: 10px 4px;
+	min-width: 300px;
+	max-width: 300px;
+	min-height: 100px;
+	max-height: 100px;
+
+}
+#contactform .submit-area {
+	text-align: right;
+}
+#contactform .submit-area input[type="submit"] {
+	margin: 10px 4px;
+	margin-right: 41px;
+	cursor: pointer;
+}
+
+
+/* Resume */
+#resumepage {
+	text-align: center;
+}
+#resumepage a:hover {
+	border-bottom: none;
+}
+.link {
+	font-family: 'Microsoft Yi Baiti', Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	display: inline-block;
+	border: none;
+	text-align: left;
+	width: 240px;
+	color: #FFF;
+	background-color: #9ce3e0;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.link:hover {
+	background-color: #BADA55;
+}
+
+#footer {
+	background: #FFF;
+	text-align: center;
+	padding: 30px 0;
+	line-height: 25px;
+	word-spacing: 3px;
+}
+
+/* Resume Formatting */
+
+#resume {
+	max-width: 800px;
+}
+#resume h3, #resume h4 {
+	font-family: 'Microsoft Yi Baiti', Helvetica, Arial, sans-serif;
+}
+#resume #resumename {
+	background: none;
+}
+#resume h1 {
+	font-size: 45px;
+	text-align: center;
+	margin: 0;
+}
+#resume h2 {
+	font-family: hagin, 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	color: #666;
+	margin-bottom: 5px;
+}
+#resume h3 {
+	margin: 0px;
+}
+#resume h4 {
+	color: #9ce3e0;
+	margin: 0px;
+}
+.resumeslab {
+	background-color: #fff;
+	padding: 20px;
+}
+.resumeslab ul {
+	margin-top: 0;
+}
+.resumeslab ul:last-child {
+	margin-bottom: 0;
+}
+#resume #skill li {
+	list-style-type: none;
+	margin: 10px;
+}
+#resume #skill li em {
+	color: #9ce3e0;
+	font-weight: bold;
+}
+#resume dl {
+	margin-top: 0;
+}
+#resume dd {
+	margin-left: 0px;
+}
+
+#resume #skill {
+	margin: 0;
+	padding: 0;
+}
+#resume dd ul {
+	margin-top: 0;
+}
+
+#resume #content h2 {
+	margin: 0;
+}
+#resume p {
+	margin-top: 0px;
+	margin-left: 40px;
 }
