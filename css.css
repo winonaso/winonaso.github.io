@@ -357,7 +357,7 @@ h2 {
 	padding-bottom: 10px;
 }
 .link:hover {
-	background-color: #BADA55;
+	background-color: #77b1af;
 }
 
 #footer {
@@ -397,7 +397,7 @@ h2 {
 	margin: 0px;
 }
 #resume h4 {
-	color: #9ce3e0;
+	color: #77b1af;
 	margin: 0px;
 }
 .resumeslab {
@@ -415,7 +415,7 @@ h2 {
 	margin: 10px;
 }
 #resume #skill li em {
-	color: #9ce3e0;
+	color: #77b1af;
 	font-weight: bold;
 }
 #resume dl {
