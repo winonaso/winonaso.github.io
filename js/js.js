@@ -4,7 +4,7 @@
 		}),
 		headers = $('img', '#header'),
 		navbarHeight = $("#navi").height(),
-		body = $('body'),
+		body = $('body,html'),
 		scrollToElement = function (element) {
 			body.animate({
 				scrollTop: element.offset().top - navbarHeight
@@ -46,7 +46,10 @@
 		headers.eq((headers.index(selected) + 1) % headers.length).addClass('selected');
 	}, 15000);
 
-	projectSection.height(22+$('.project.selected', projectSection).height());
+	$('.project.selected', projectSection).waitForImages(function () {
+		projectSection.height(22+$(this).height());
+	});
+
 	$('.project', projectSection).each(function () {
 		projectImageIndex($(this), 0);
 	});
