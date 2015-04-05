@@ -1,0 +1,150 @@
+/* GLOBAL STYLES*/
+body, html {
+	padding-top: 0;
+	margin-top: 20px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 15px;
+}
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+p {
+	font-family: 'Roboto Slab', serif;
+}
+.title {
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-size: 30px;
+	text-align: center;
+	color: #800f0f;
+}
+
+li {
+	list-style-type: none;
+}
+li img {
+	vertical-align: middle;
+}
+
+ul.table {
+	display: table;
+}
+ul.table li {
+	display: table-row;
+}
+ul.table li .cell {
+	display: table-cell;
+	text-align: right;
+	padding: 0 10px;
+}
+ul.table li .cell:last-child {
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+	color: #800f0f;
+	font-weight: bold;
+}
+
+.navbar {
+	display: table;
+	width: 100%;
+	max-width: 1024px;
+	margin: auto;
+}
+.navbar .cell {
+	display: table-cell;
+	text-align: left;
+}
+.navbar .cell:last-child {
+	text-align: right;
+}
+.navbar img {
+	width: 250px;
+	vertical-align: middle;
+}
+.navbar .links {
+	display: inline-block;
+	vertical-align: middle;
+	border-bottom: 2px dotted #800f0f;
+	padding: 0 20px 10px 20px;
+}
+.navbar .links a {
+	margin: 0 5px;
+	padding: 5px 10px;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+}
+.navbar .links a.inverted {
+	color: white;
+	background-color: #800f0f;
+}
+
+.section {
+	margin: auto;
+	max-width: 1024px;
+	position: relative;
+	padding: 25px;
+}
+.section::after {
+	content: '';
+	border-bottom: 2px dotted #800f0f;
+	height: 2px;
+	width: 60%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+.section:last-child::after {
+	border-bottom: none;
+}
+.section .title {
+	font-weight: bold;
+}
+.section .left {
+	float: left;
+	margin-right: 40px;
+}
+.section p::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+#company .title {
+	margin-top: 40px;
+}
+#company img {
+	width: 100px;
+}
+#patient img {
+	width: 100px;
+}
+
+#media img {
+	height: 75px;
+}
+
+#support .supporters {
+	margin: auto;
+	text-align: center;
+	padding-top: 30px;
+}
+#support .supporters img {
+	max-width: 200px;
+	max-height: 200px;
+	vertical-align: middle;
+	margin: 0 25px;
+}
+.title-img{
+	display: block;
+	margin: auto;
+}
