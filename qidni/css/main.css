@@ -40,7 +40,6 @@ ul.table li {
 }
 ul.table li .cell {
 	display: table-cell;
-	text-align: right;
 	padding: 0 10px;
 }
 ul.table li .cell:last-child {
@@ -147,4 +146,31 @@ a {
 .title-img{
 	display: block;
 	margin: auto;
+}
+.date{
+	width: 130px;
+	text-align: left;
+	color: #800f0f;
+	font-weight: bold;
+	font-size: 15px;
+}
+#news-media tr{
+	margin-top: 15px;
+	display: block;
+	font-size: 16px;
+	margin-left: 10px;
+}
+#features td{
+	width: 200px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	color: #800f0f;
+	padding-right: 20px;
+}
+#features{
+	width: 800px;
+	margin: auto;
+	margin-top: 30px;
 }
