@@ -1,7 +1,7 @@
 /* GLOBAL STYLES*/
 body, html {
 	padding-top: 0;
-	margin-top: 20px;
+	margin-top: 0px;
 	height: 100%;
 	margin-left: auto;
 	margin-right: auto;
@@ -52,6 +52,14 @@ a {
 	font-weight: bold;
 }
 
+.navbar-wrapper {
+	background-color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
 .navbar {
 	display: table;
 	width: 100%;
@@ -106,6 +114,13 @@ a {
 .section:last-child::after {
 	border-bottom: none;
 }
+.section .inner-section {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
 .section .title {
 	font-weight: bold;
 }
@@ -118,11 +133,19 @@ a {
 	clear: both;
 	display: block;
 }
-#company .title {
-	margin-top: 40px;
+#company {
+	height: 100%;
+	max-width: none;
+	background-image: url('../img/background.jpg');
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: cover;
 }
-#company img {
-	width: 100px;
+#company.section .inner-section {
+	max-width: 1024px;
+	margin: auto;
+	background-color: rgba(255,255,255, 0.5);
+	padding: 15px;
 }
 #patient img {
 	width: 100px;
