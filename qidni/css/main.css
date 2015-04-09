@@ -142,9 +142,9 @@ a {
 	background-size: cover;
 }
 #company.section .inner-section {
-	max-width: 1024px;
+	max-width: 500px;
 	margin: auto;
-	background-color: rgba(255,255,255, 0.5);
+	background-color: rgba(255,255,255, 0.75);
 	padding: 15px;
 }
 #patient img {
@@ -171,8 +171,8 @@ a {
 	margin: auto;
 }
 .date{
-	width: 130px;
-	text-align: left;
+	width: 135px;
+	text-align: right;
 	color: #800f0f;
 	font-weight: bold;
 	font-size: 15px;
