@@ -145,7 +145,7 @@ a {
 	max-width: 500px;
 	margin: auto;
 	background-color: rgba(255,255,255, 0.75);
-	padding: 15px;
+	padding: 25px;
 }
 #patient img {
 	width: 100px;
@@ -196,4 +196,30 @@ a {
 	width: 800px;
 	margin: auto;
 	margin-top: 30px;
+}
+#contactus{
+	margin: auto;
+	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+	padding: 20px;
+}
+#contactus td{
+	padding: 20px;
+}
+#sources {
+	font-size: 8px;
+	font-family: 'Open Sans', sans-serif;
+	padding: 7px;
+	background-color: rgba(255,255,255, 0.75);
+	position: relative;
+	top: 55%;
+	width: 1243px;
+}
+#sources li{
+	display: inline;
+	margin-right: 10px;
+}
+#sources ul{
+	margin-top: 0px;
+	padding-left: 0px;
 }
