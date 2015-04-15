@@ -52,6 +52,10 @@ a {
 	font-weight: bold;
 }
 
+a:hover{
+	text-decoration: underline;
+}
+
 .navbar-wrapper {
 	background-color: white;
 	position: fixed;
@@ -98,7 +102,7 @@ a {
 	margin: auto;
 	max-width: 1024px;
 	position: relative;
-	padding: 25px;
+	padding: 50px;
 }
 .section::after {
 	content: '';
@@ -106,12 +110,15 @@ a {
 	height: 2px;
 	width: 60%;
 	position: absolute;
-	bottom: 0;
+	bottom: 20px;
 	left: 0;
 	right: 0;
 	margin: 0 auto;
 }
 .section:last-child::after {
+	border-bottom: none;
+}
+#copyright::after{
 	border-bottom: none;
 }
 .section .inner-section {
@@ -143,9 +150,12 @@ a {
 }
 #company.section .inner-section {
 	max-width: 500px;
-	margin: auto;
+	margin-left: 175px;
 	background-color: rgba(255,255,255, 0.75);
 	padding: 25px;
+}
+#company.section .inner-section p:last-child{
+    margin-bottom: 0px;
 }
 #patient img {
 	width: 100px;
@@ -154,7 +164,6 @@ a {
 #media img {
 	height: 75px;
 }
-
 #support .supporters {
 	margin: auto;
 	text-align: center;
@@ -166,24 +175,26 @@ a {
 	vertical-align: middle;
 	margin: 0 25px;
 }
-.title-img{
+.title-img {
 	display: block;
 	margin: auto;
 }
-.date{
+.date {
 	width: 135px;
 	text-align: right;
 	color: #800f0f;
 	font-weight: bold;
 	font-size: 15px;
 }
-#news-media tr{
-	margin-top: 15px;
+#news-media tr {
+	margin-bottom: 20px;
 	display: block;
 	font-size: 16px;
-	margin-left: 10px;
 }
-#features td{
+.newscontent {
+	padding-left: 20px;
+}
+#features td {
 	width: 200px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
@@ -192,18 +203,19 @@ a {
 	color: #800f0f;
 	padding-right: 20px;
 }
-#features{
+#features {
 	width: 800px;
 	margin: auto;
 	margin-top: 30px;
+	margin-bottom: 30px;
 }
-#contactus{
+#contactus {
 	margin: auto;
 	font-size: 15px;
 	font-family: 'Open Sans', sans-serif;
 	padding: 20px;
 }
-#contactus td{
+#contactus td {
 	padding: 20px;
 }
 #sources {
@@ -212,14 +224,29 @@ a {
 	padding: 7px;
 	background-color: rgba(255,255,255, 0.75);
 	position: relative;
-	top: 55%;
-	width: 1243px;
+	top: 54%;
+	max-width: 1059px;
+	margin: auto;
 }
-#sources li{
+#sources li {
 	display: inline;
 	margin-right: 10px;
 }
-#sources ul{
+#sources ul {
 	margin-top: 0px;
 	padding-left: 0px;
+	margin-bottom: 0px;
+}
+#copyright p {
+	font-size: 13px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+#copyright {
+	padding-top: 0px;
+}
+#news-media img{
+	max-width: 200px;
 }
