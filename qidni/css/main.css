@@ -45,17 +45,14 @@ ul.table li .cell {
 ul.table li .cell:last-child {
 	text-align: left;
 }
-
 a {
 	text-decoration: none;
 	color: #800f0f;
 	font-weight: bold;
 }
-
 a:hover{
 	text-decoration: underline;
 }
-
 .navbar-wrapper {
 	background-color: white;
 	position: fixed;
@@ -84,7 +81,6 @@ a:hover{
 .navbar .links {
 	display: inline-block;
 	vertical-align: middle;
-	border-bottom: 2px dotted #800f0f;
 	padding: 0 20px 10px 20px;
 }
 .navbar .links a {
@@ -98,13 +94,25 @@ a:hover{
 	background-color: #800f0f;
 }
 
-.section {
+.section, .section2 {
 	margin: auto;
-	max-width: 1024px;
+	width: 100%;
 	position: relative;
 	padding: 50px;
 }
-.section::after {
+.section2 {
+	background-color: #800f0f;
+}
+.section2 p, .section2 .title {
+	color: #fff;
+}
+.section p, .section2 p{
+	max-width: 1024px;
+	margin: auto;
+	margin-top: 15px;
+}
+/*
+.section::after, .section2::after {
 	content: '';
 	border-bottom: 2px dotted #800f0f;
 	height: 2px;
@@ -115,12 +123,12 @@ a:hover{
 	right: 0;
 	margin: 0 auto;
 }
-.section:last-child::after {
+.section:last-child::after, .section2:last-child::after {
 	border-bottom: none;
 }
 #copyright::after{
 	border-bottom: none;
-}
+}*/
 .section .inner-section {
 	position: relative;
 	top: 50%;
@@ -128,14 +136,14 @@ a:hover{
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
-.section .title {
+.section .title, .section2 .title{
 	font-weight: bold;
 }
-.section .left {
+.section .left, .section2 .left {
 	float: left;
 	margin-right: 40px;
 }
-.section p::after {
+.section p::after, .section2 p::after {
 	content: '';
 	clear: both;
 	display: block;
@@ -186,6 +194,11 @@ a:hover{
 	font-weight: bold;
 	font-size: 15px;
 }
+#news-media {
+  max-width: 1024px;
+  display: block;
+  margin: auto;
+}
 #news-media tr {
 	margin-bottom: 20px;
 	display: block;
@@ -215,8 +228,17 @@ a:hover{
 	font-family: 'Open Sans', sans-serif;
 	padding: 20px;
 }
+#contactus a {
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: bold;
+}
+#contactus a:hover{
+	color: #b55757;
+}
 #contactus td {
 	padding: 20px;
+	color: #ffffff;
 }
 #sources {
 	font-size: 8px;
@@ -245,7 +267,7 @@ a:hover{
 	margin-bottom: 0px;
 }
 #copyright {
-	padding-top: 0px;
+	padding-top: 25px;
 }
 #news-media img{
 	max-width: 200px;
