@@ -16,6 +16,7 @@ body, html {
 }
 p {
 	font-family: 'Roboto Slab', serif;
+	font-size: 17px;
 }
 .title {
 	font-family: 'Open Sans', sans-serif;
@@ -106,29 +107,7 @@ a:hover{
 .section2 p, .section2 .title {
 	color: #fff;
 }
-.section p, .section2 p{
-	max-width: 1024px;
-	margin: auto;
-	margin-top: 15px;
-}
-/*
-.section::after, .section2::after {
-	content: '';
-	border-bottom: 2px dotted #800f0f;
-	height: 2px;
-	width: 60%;
-	position: absolute;
-	bottom: 20px;
-	left: 0;
-	right: 0;
-	margin: 0 auto;
-}
-.section:last-child::after, .section2:last-child::after {
-	border-bottom: none;
-}
-#copyright::after{
-	border-bottom: none;
-}*/
+
 .section .inner-section {
 	position: relative;
 	top: 50%;
@@ -143,11 +122,6 @@ a:hover{
 	float: left;
 	margin-right: 40px;
 }
-.section p::after, .section2 p::after {
-	content: '';
-	clear: both;
-	display: block;
-}
 #company {
 	height: 100%;
 	max-width: none;
@@ -157,9 +131,9 @@ a:hover{
 	background-size: cover;
 }
 #company.section .inner-section {
-	max-width: 500px;
+	max-width: 600px;
 	margin: auto;
-	background-color: rgba(255,255,255, 0.75);
+	background-color: rgba(255,255,255, 0.95);
 	padding: 25px;
 }
 #company.section .inner-section p:last-child{
@@ -209,7 +183,7 @@ a:hover{
 }
 #features td {
 	width: 200px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto Slab', serif;
 	font-size: 15px;
 	font-weight: bold;
 	text-align: center;
@@ -225,7 +199,7 @@ a:hover{
 #contactus {
 	margin: auto;
 	font-size: 15px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto Slab', serif;
 	padding: 20px;
 }
 #contactus a {
@@ -240,28 +214,19 @@ a:hover{
 	padding: 20px;
 	color: #ffffff;
 }
-#sources {
-	font-size: 13px;
-	font-family: 'Open Sans', sans-serif;
-	padding: 7px;
-	background-color: rgba(255,255,255, 0.75);
-	position: relative;
-	top: 54%;
-	max-width: 1059px;
-	margin: auto;
-}
-#sources li {
-	display: inline;
+#company.section .inner-section ul {
 	margin-right: 10px;
-}
-#sources ul {
-	margin-top: 0px;
 	padding-left: 0px;
+	margin-top: 0px;
 	margin-bottom: 0px;
+}
+#company.section .inner-section li {
+	display: inline;
+	padding-right: 5px;
 }
 #copyright p {
 	font-size: 13px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto Slab', serif;
 	text-align: center;
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -271,4 +236,9 @@ a:hover{
 }
 #news-media img{
 	max-width: 200px;
+}
+#sources p, #sources li{
+	margin-bottom: 0px;
+	font-size: 13px;
+	font-family: 'Open Sans', sans-serif;
 }
