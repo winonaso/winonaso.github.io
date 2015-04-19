@@ -16,7 +16,7 @@ body, html {
 }
 p {
 	font-family: 'Roboto Slab', serif;
-	font-size: 17px;
+	font-size: 15px;
 }
 .title {
 	font-family: 'Open Sans', sans-serif;
@@ -239,6 +239,6 @@ a:hover{
 }
 #sources p, #sources li{
 	margin-bottom: 0px;
-	font-size: 13px;
+	font-size: 12px;
 	font-family: 'Open Sans', sans-serif;
 }
