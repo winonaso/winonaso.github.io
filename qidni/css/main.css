@@ -17,6 +17,7 @@ body, html {
 p {
 	font-family: 'Roboto Slab', serif;
 	font-size: 15px;
+	margin-bottom: 0px;
 }
 .title {
 	font-family: 'Open Sans', sans-serif;
@@ -180,6 +181,7 @@ a:hover{
 }
 .newscontent {
 	padding-left: 20px;
+	font-family: 'Roboto Slab', serif;
 }
 #features td {
 	width: 200px;
