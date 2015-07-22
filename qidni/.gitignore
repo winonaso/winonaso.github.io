@@ -1,6 +1,0 @@
-# Default
-.DS_Store
-*.log
-
-# Node modules
-node_modules/
