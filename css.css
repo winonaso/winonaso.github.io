@@ -56,7 +56,14 @@ h2 {
 	font-weight: noromal;
 	margin-top: 0;
 }
-
+#navi .info .link-wrapper .left-links {
+	width: auto;
+	height: 100%;
+	display: inline-block;
+	color: #666;
+	font-size: 28px;
+	font-family: hagin, 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+}
 #navi {
 	font-family: 'Microsoft Yi Baiti', Helvetica, Arial, sans-serif;
 	font-size: 20px;
@@ -95,13 +102,7 @@ h2 {
 	max-width: 900px;
 	position: relative;
 	text-align: left;
-}
-#navi .info .link-wrapper .left-links {
-	width: auto;
-	height: 100%;
-	display: inline-block;
-	color: #666;
-	font-size: 18px;
+
 }
 #navi .info .link-wrapper .right-links {
 	position: absolute;
@@ -131,7 +132,7 @@ h2 {
 
 #header {
 	margin: auto;
-	margin-bottom: 60px;
+	margin-bottom: 30px;
 	margin-top: 30px;
 	width: 695px;
 	height: 300px;
@@ -163,6 +164,8 @@ h2 {
 	bottom: 15px;
 	color: white;
 	text-align: center;
+	background-color: rgba(124, 181, 179, 0.5);
+	padding-bottom: 10px;
 }
 #header .header-text .name {
 	text-transform: uppercase;
@@ -201,6 +204,7 @@ h2 {
 
 .section .triplethreat img{
 	max-width: 150px;
+	margin: 10px;
 }
 
 .section .triplethreat h2{
@@ -280,32 +284,7 @@ h2 {
 	font-size: 0;
 	width: 655px;
 	margin: 10px auto;
-}
-#projects .project .main-image-container .left-arrow,
-#projects .project .main-image-container .right-arrow {
-	cursor: pointer;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	width: 32px;
-	height: 32px;
-	z-index: 1;
-}
-#projects .project .main-image-container .left-arrow {
-	left: 0;
-	background-image: url('images/on-left.png');
-}
-#projects .project .main-image-container .left-arrow.disabled {
-	cursor: auto;
-	background-image: url('images/off-left.png');
-}
-#projects .project .main-image-container .right-arrow {
-	right: 0;
-	background-image: url('images/on-right.png');
-}
-#projects .project .main-image-container .right-arrow.disabled {
-	cursor: auto;
-	background-image: url('images/off-right.png');
+
 }
 #projects .project .main-image {
 	-webkit-transition: transform 0.5s;
@@ -402,10 +381,16 @@ h2 {
 .project.section img:first-of-type {
 	width: 50%;
 }
-
+.project.section.logo img{
+	width: auto;
+}
 .project.section .extrainfo{
 	font-size: 16px;
 	text-align: left;
+}
+
+.project.section.chanty .info, .project.section.soijun .info {
+	width: 35%;
 }
 
 /* Contact Me */
@@ -511,14 +496,14 @@ h2 {
 	font-size: 18px;
 	display: inline-block;
 	border: none;
-	text-align: left;
+	text-align: center;
 	width: 240px;
 	color: #FFF;
 	background-color: #9ce3e0;
-	padding-left: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	margin-top: 10px;
+
 }
 .link:hover {
 	background-color: #7CB5B3;
@@ -613,14 +598,6 @@ h2 {
 	margin-top: 0px;
 	margin-left: 40px;
 }
-#happyworker p {
-	margin-top: 0px;
-	margin-left: 0px;
-	margin-bottom: 5px;
-}
-#happyworker img {
-	margin: 10px;
-	border-style: solid;
-	border-width: 10px;
-	border-color: #A9A9A9;
+.resumepdf {
+	text-align: center;
 }
