@@ -14,7 +14,7 @@
 		projectImageIndex = function (project, index) {
 			var containerWidth = $('.main-image-container', project).width(),
 				mainImage = $('.main-image', project),
-				thumbnails = $('.thumbnails img', project);
+				thumbnails = $('.thumbnails .thumbnail', project);
 			mainImage.css('transform', 'translateX(' + -1 * index * containerWidth + 'px)');
 			thumbnails.removeClass('selected').eq(index).addClass('selected');
 
@@ -54,6 +54,10 @@
 		projectImageIndex($(this), 0);
 	});
 
+	if (window.location.hash.length > 1) {
+		scrollToElement($(window.location.hash));
+	}
+
 	$('a[href^="#"]').on('click', function (e) {
 		var self = $(this),
 			target = $(self.attr('href'));
@@ -61,7 +65,7 @@
 		scrollToElement(target);
 	});
 
-	$('#projects').on('click', '.thumbnails img', function () {
+	$('#projects').on('click', '.thumbnails .thumbnail', function () {
 		var self = $(this),
 			project = self.parents('.project');
 
@@ -71,7 +75,7 @@
 	$('#projects').on('click', '.left-arrow', function () {
 		var self = $(this),
 			project = self.parents('.project'),
-			selected = $('.thumbnails img.selected', project);
+			selected = $('.thumbnails .thumbnail.selected', project);
 
 		if (self.hasClass('disabled')) {
 			return;
@@ -83,7 +87,7 @@
 	$('#projects').on('click', '.right-arrow', function () {
 		var self = $(this),
 			project = self.parents('.project'),
-			selected = $('.thumbnails img.selected', project);
+			selected = $('.thumbnails .thumbnail.selected', project);
 
 		if (self.hasClass('disabled')) {
 			return;
