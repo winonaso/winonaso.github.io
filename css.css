@@ -15,6 +15,7 @@ body {
 	padding-bottom: 110px;
 	min-height: 100%;
 	position: relative;
+	margin-bottom: 0;
 }
 @font-face {
 	font-family: 'hagin';
