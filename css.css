@@ -371,6 +371,14 @@ h2 {
 	text-align: left;
 }
 
+.project.section .reddit{
+	display: inline-block;
+	width: 50%;
+	font-size: 16px;
+	padding: 10px;
+	vertical-align: top;
+}
+
 .project.section img {
 	display: inline-block;
 	font-size: 0;
