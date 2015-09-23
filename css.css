@@ -4,6 +4,7 @@ html {
 body, html {
 	padding-top: 0;
 	margin-top: 0;
+	margin-bottom: 0;
 	font-family: 'Microsoft Yi Baiti', Helvetica, Arial, sans-serif;
 	font-size: 15px;
 	background-image: url("background.png");
@@ -15,7 +16,6 @@ body {
 	padding-bottom: 110px;
 	min-height: 100%;
 	position: relative;
-	margin-bottom: 0;
 }
 @font-face {
 	font-family: 'hagin';
@@ -116,6 +116,8 @@ h2 {
 	display: inline-block;
 	line-height: normal;
 	margin: 0 15px;
+	text-transform: uppercase;
+
 }
 #navi a.logo {
 	height: 100%;
@@ -162,10 +164,9 @@ h2 {
 	z-index: 2;
 	left: 0;
 	right: 0;
-	bottom: 15px;
+	bottom: -1px;
 	color: white;
 	text-align: center;
-	background-color: rgba(124, 181, 179, 0.5);
 	padding-bottom: 10px;
 }
 #header .header-text .name {
@@ -178,6 +179,7 @@ h2 {
 	letter-spacing: 2px;
 	opacity: 0.8;
 	font-size: 16px;
+	text-transform: uppercase;
 }
 
 
@@ -354,7 +356,6 @@ h2 {
 
 #project-select .images {
 	font-size: 0;
-	text-align: center;
 }
 .project.section {
 	font-size: 0;
@@ -371,14 +372,6 @@ h2 {
 	text-align: left;
 }
 
-.project.section .reddit{
-	display: inline-block;
-	width: 50%;
-	font-size: 16px;
-	padding: 10px;
-	vertical-align: top;
-}
-
 .project.section img {
 	display: inline-block;
 	font-size: 0;
@@ -391,18 +384,19 @@ h2 {
 .project.section img:first-of-type {
 	width: 50%;
 }
+
 .project.section.logo img{
 	width: auto;
 }
+
 .project.section .extrainfo{
 	font-size: 16px;
 	text-align: left;
 }
 
-.project.section.chanty .info, .project.section.soijun .info {
+.project.section.chanty .info {
 	width: 35%;
 }
-
 /* Contact Me */
 #contactme {
 	font-size: 0px;
@@ -484,6 +478,7 @@ h2 {
 .pproject p, .nproject p{
 	margin: 0px;
 	font-size: 12px;
+	text-transform: uppercase;
 }
 
 #nextproject {
@@ -512,8 +507,8 @@ h2 {
 	background-color: #9ce3e0;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	margin-top: 10px;
-
+	margin-top: 20px;
+	text-transform: uppercase;
 }
 .link:hover {
 	background-color: #7CB5B3;
@@ -522,7 +517,7 @@ h2 {
 #footer {
 	background: #FFF;
 	text-align: center;
-	padding: 20px 0;
+	padding: 30px 0;
 	line-height: 25px;
 	word-spacing: 3px;
 	position: absolute;
@@ -610,4 +605,115 @@ h2 {
 }
 .resumepdf {
 	text-align: center;
+}
+
+@media (max-width: 695px) {
+	body {
+		padding-top: 1px;
+	}
+
+	.section .triplethreat {
+		max-width: 300px;
+		text-align: center;
+		float: none;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.section #centerthreat {
+		margin-right: auto;
+		margin-left: auto;
+	}
+	#aboutme, #contactme, #resumepage, #project-select, #projects {
+		max-width: auto;
+	}
+	#project-select .category {
+		display: block;
+	}
+	#project-select .category.selected, #project-select .category:hover {
+		color: #7CB5B3;
+		border-bottom: none;
+	}
+	.project.section .info {
+		width: auto;
+	}
+	.project.section img:first-of-type {
+		width: auto;
+	}
+	.project.section img {
+		max-width: 350px;
+	}
+	#aboutme img {
+		float: none;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 10px;
+		display: block;
+	}
+	#blips {
+		width: 100%;
+	}
+	#blips .blip {
+		text-align: center;
+	}
+	#contactform {
+		width: auto;
+		display: block;
+	}
+	#contactform .submit-area {
+		text-align: center;
+	}
+	#contactform .submit-area input[type="submit"] {
+		margin-right: 0px;
+	}
+	#resume h2 {
+		text-align: center;
+	}
+	#project-select .images {
+		text-align: center;
+	}
+}
+
+@media (max-width: 620px) {
+	#navi {
+		line-height: normal;
+		height: auto;
+	}
+	#navi.stuck {
+		position: relative;
+	}
+	#navi .info {
+		position: relative;
+	}
+	#navi .bar {
+		top: 18px;
+		bottom: auto;
+		height: 34px;
+	}
+	#navi .info .link-wrapper .left-links,
+	#navi .info .link-wrapper .right-links {
+		display: block;
+		position: static;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	#navi .info .link-wrapper .left-links {
+		height: 70px;
+		margin-top: 10px;
+	}
+	#navi .info .link-wrapper .right-links {
+		padding: 10px 0;
+		background-color: #FFF;
+	}
+
+	#header {
+		margin-top: 0;
+		width: 100%;
+		height: 0;
+		padding-bottom: 43.16%;
+	}
+
+	#header img {
+		width: 100%;
+	}
 }
