@@ -115,10 +115,10 @@
 		self.addClass('selected');
 
 		if (categoryName === 'all') {
-			$('#project-select img').removeClass('hide');
+			$('#project-select a').removeClass('hide');
 		} else {
-			$('#project-select img').addClass('hide');
-			$('#project-select img.'+categoryName).removeClass('hide');
+			$('#project-select a').addClass('hide');
+			$('#project-select img.'+categoryName).parent().removeClass('hide');
 		}
 	});
 }());
