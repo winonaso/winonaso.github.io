@@ -137,7 +137,7 @@ h2 {
 	margin: auto;
 	margin-bottom: 30px;
 	margin-top: 30px;
-	width: 715px;
+	width: 695px;
 	height: 300px;
 	position: relative;
 }
@@ -188,7 +188,7 @@ h2 {
 	background-color: #FFF;
 	padding: 20px;
 	margin-bottom: 40px;
-	max-width: 715px;
+	max-width: 695px;
 	margin-top: 10px;
 }
 
@@ -221,7 +221,7 @@ h2 {
 
 /*About Me Formatting */
 #aboutme, #contactme, #resumepage, #project-select, #projects{
-	max-width: 715px;
+	max-width: 695px;
 }
 
 #aboutme img {
@@ -321,6 +321,10 @@ h2 {
 	margin: auto;
 }
 
+#project-select a {
+	margin: auto;
+}
+
 #project-select a:hover {
 	border-bottom: 0;
 }
@@ -341,6 +345,7 @@ h2 {
 }
 #project-select img {
 	cursor: pointer;
+	margin-bottom: 15px;
 	margin-left: 3px;
 	margin-right: 3px;
 }
@@ -351,9 +356,6 @@ h2 {
 
 #project-select .images {
 	font-size: 0;
-}
-#project-select a {
-	margin: 7px;
 }
 .project.section {
 	font-size: 0;
@@ -378,14 +380,7 @@ h2 {
 	padding: 10px;
 	max-width: 655px;
 }
-.titles p {
-	margin-top: 0;
-	font-size: 15px;
-	text-align: left;
-}
-.titles a {
-	display: inline-block;
-}
+
 .project.section img:first-of-type {
 	width: 50%;
 }
@@ -612,7 +607,7 @@ h2 {
 	text-align: center;
 }
 
-@media (max-width: 715px) {
+@media (max-width: 695px) {
 	body {
 		padding-top: 1px;
 	}
@@ -646,7 +641,7 @@ h2 {
 		width: auto;
 	}
 	.project.section img {
-		max-width: 90%;
+		max-width: 350px;
 	}
 	#aboutme img {
 		float: none;
@@ -712,7 +707,7 @@ h2 {
 	}
 
 	#header {
-		margin-top: 10px;
+		margin-top: 0;
 		width: 100%;
 		height: 0;
 		padding-bottom: 43.16%;
