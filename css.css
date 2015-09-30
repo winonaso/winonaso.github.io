@@ -78,9 +78,7 @@ h2 {
 	right: 0;
 	z-index: 3;
 }
-#navi.stuck {
-	position: fixed;
-}
+
 #navi .bar {
 	position: absolute;
 	left: 0;
@@ -610,6 +608,16 @@ h2 {
 }
 .resumepdf {
 	text-align: center;
+}
+.coop {
+	background-color: #f6f6f6;
+	padding: 15px;
+	margin-bottom: 15px;
+}
+#resume .coop h1 {
+	font-size: 16px;
+	margin-bottom: 10px;
+	padding-top: 0;
 }
 
 @media (max-width: 715px) {
