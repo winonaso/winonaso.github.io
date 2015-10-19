@@ -401,6 +401,12 @@ h2 {
 	width: 35%;
 }
 /* Contact Me */
+#entry_223057992, #entry_1286452109, #entry_2036269118 {
+	margin: 10px 4px;
+	padding: 5px;
+	width: 280px;
+	border: 1px solid #7CB5B3;
+}
 #contact-card {
 	margin-top: 30px;
 	margin-bottom: 30px;
