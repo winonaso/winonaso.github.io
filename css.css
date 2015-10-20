@@ -84,7 +84,6 @@ h2 {
 	right: 0;
 	top: 27px;
 	bottom: 23px;
-	background-color: #ffffff;
 }
 #navi .info {
 	position: absolute;
@@ -542,7 +541,6 @@ hr {
 }
 
 #footer {
-	background: #FFF;
 	text-align: center;
 	padding: 20px 0;
 	line-height: 25px;
@@ -756,7 +754,6 @@ hr {
 	}
 	#navi .info .link-wrapper .right-links {
 		padding: 10px 0;
-		background-color: #FFF;
 	}
 
 	#header {
