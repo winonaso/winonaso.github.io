@@ -414,26 +414,42 @@ h2 {
 #contact-card img{
 	min-width: 75px;
 }
-#contact-card h2, #contact-card h3{
+#contact-card h2, #contact-card h3 {
 	margin: 0;
 	line-height: 14px;
 }
-#contact-card .ccard{
+#contact-card .ccard {
 	display: inline-block;
 	margin-right: 30px;
 	width: 120px;
 }
-#contact-card .ccard h3 a{
+#contact-card .ccard h3 a {
 	font-size: 16px;
 }
-.fa-3x:hover{
+
+#contact-card .ccard:hover a {
+	border-bottom: 2px dotted #7CB5B3;
+}
+#contact-card .ccard:hover .fa-3x {
 	color: #7CB5B3;
 }
-.fa-3x{
+
+#contactme .contact-line {
+	position: relative;
+}
+#contactme .contact-line .fa-scissors {
+	position: absolute;
+	bottom: -6px;
+	right: 20px;
+}
+.fa-3x:hover {
+	color: #7CB5B3;
+}
+.fa-3x {
 	color: #9ce3e0;
 	margin-bottom: 4px;
 }
-.fa-scissors{
+.fa-scissors {
 	color: #7CB5B3;
 }
 
