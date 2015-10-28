@@ -444,6 +444,7 @@ h2 {
 }
 .fa-3x:hover {
 	color: #7CB5B3;
+	text-decoration: none;
 }
 .fa-3x {
 	color: #9ce3e0;
