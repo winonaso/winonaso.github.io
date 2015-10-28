@@ -423,11 +423,14 @@ h2 {
 	margin-right: 30px;
 	width: 120px;
 }
-#contact-card .ccard h3 a {
+#contact-card .ccard h3 {
 	font-size: 16px;
 }
 
 #contact-card .ccard:hover a {
+	border-bottom: none;
+}
+#contact-card .ccard:hover h3 span {
 	border-bottom: 2px dotted #7CB5B3;
 }
 #contact-card .ccard:hover .fa-3x {
