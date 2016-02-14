@@ -672,13 +672,13 @@ hr {
 }
 }
 
-@media (max-width: 760px) {
+@media only screen and (max-width: 760px) {
 #project-select a {
 	margin: 7px;
 }
 }
 
-@media (max-width: 715px) {
+@media only screen and (max-width: 715px) {
 	body {
 		padding-top: 1px;
 	}
@@ -745,7 +745,7 @@ hr {
 	}
 }
 
-@media (max-width: 620px) {
+@media only screen and (max-width: 620px) {
 	#navi {
 		line-height: normal;
 		height: auto;
