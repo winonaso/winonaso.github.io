@@ -792,8 +792,3 @@ hr {
 		width: 100%;
 	}
 }
-@media (max-width: 500px) {
-	#project-select img {
-		max-width: 145px;
-	}
-}
