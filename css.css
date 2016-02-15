@@ -663,6 +663,18 @@ hr {
 }
 
 @media (max-width: 775px) {
+#header .header-text .interests {
+	display: none;
+}
+#contact-card .ccard {
+	display: block;
+	margin-right: auto;
+	width: auto;
+	margin-top: 35px;
+}
+#project-select img {
+	max-width: 145px;
+}
 .section .triplethreat {
 	margin-left: 5px;
 }
