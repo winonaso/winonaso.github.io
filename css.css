@@ -680,32 +680,34 @@ hr {
 		width: auto;
 		margin-top: 35px;
 	}
-	.section .triplethreat {
-		margin-left: 5px;
+	.section .triplethreat:first-of-type {
+		margin-top: 0px;
 	}
-	.section #centerthreat{
-		margin-left: 20px;
-		margin-right: 20px;
-	}
-}
-
-@media (max-width: 730px) {
-	body {
-		padding-top: 1px;
-	}
-
 	.section .triplethreat {
 		max-width: 300px;
 		text-align: center;
 		float: none;
 		display: block;
-		margin-left: auto;
-		margin-right: auto;
+		margin: auto;
+		margin-top: 15px;
 	}
 	.section #centerthreat {
-		margin-right: auto;
-		margin-left: auto;
+		margin: auto;
+		margin-top: 15px;
 	}
+	#header {
+		margin-top: 10px;
+		width: 100%;
+		height: 0;
+		padding-bottom: 43.16%;
+	}
+
+	#header img {
+		width: 100%;
+	}
+}
+
+@media (max-width: 730px) {
 	#aboutme, #contactme, #resumepage, #project-select, #projects {
 		max-width: auto;
 	}
@@ -761,6 +763,9 @@ hr {
 }
 
 @media (max-width: 620px) {
+	body {
+		padding-top: 1px;
+	}
 	#navi {
 		line-height: normal;
 		height: auto;
@@ -789,16 +794,5 @@ hr {
 	}
 	#navi .info .link-wrapper .right-links {
 		padding: 10px 0;
-	}
-
-	#header {
-		margin-top: 10px;
-		width: 100%;
-		height: 0;
-		padding-bottom: 43.16%;
-	}
-
-	#header img {
-		width: 100%;
 	}
 }
