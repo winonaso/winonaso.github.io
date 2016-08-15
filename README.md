@@ -1,3 +1,3 @@
-# inonaso
+# new-winonaso
 Hello! 
-This is Winona So's porfolio. :)
+This is just a testing ground for my porfolio. :)
