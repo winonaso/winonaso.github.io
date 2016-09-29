@@ -75,7 +75,7 @@ h2 {
 hr {
     border: 0;
     border-bottom: 2px solid black;
-    max-width: 725px;
+    max-width: 800px;
 }
 #navi a {
 	vertical-align: middle;
@@ -105,12 +105,12 @@ hr {
 	background: none;
 }
 #navi .right-links{
-	max-width: 725px;
+	max-width: 800px;
 	margin: auto;
 	border-bottom: 1.5px solid black;
 }
 #navi .left-links{
-	max-width: 725px;
+	max-width: 800px;
 	margin: auto;
 	border-bottom: 1.5px solid black;
 }
@@ -146,21 +146,24 @@ hr {
 	margin: auto;
 	background-color: #FFF;
 	margin-top: 25px;
-	max-width: 725px;
+	max-width: 800px;
 	overflow: hidden;
 	text-align: center;
 }
 .section img{
-	max-width: 725px;
+	max-width: 800px;
 }
 .section p{
 	text-align: left;
 }
-#aboutme, #contactme, #resumepage, #project-select, #projects{
-	max-width: 725px;
+#resumepage, #project-select, #projects{
+	max-width: 1200px;
+}
+#aboutme, #contactme{
+	max-width: 800px;
 }
 .maintext{
-	width: 350px;
+	width: 388px;
 	border-top: 1.5px solid black;
 	border-bottom: 2px solid black;
 	float: left;
@@ -228,8 +231,8 @@ hr {
 }
 
 .section #centerthreat{
-	margin-left: 50px;
-	margin-right: 50px;
+	margin-left: 80px;
+	margin-right: 80px;
 }
 
 /* Projects Formatting */
@@ -269,13 +272,13 @@ hr {
 }
 .cat{
 	text-align: center;
-}
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
 .cat ul{
 	padding-left: 0;
 }
 .cat li{
 	display: inline-block;
-	margin-left: 20px;
+	margin-left: 50px;
 	margin-bottom: 40px;	
 }
 .cat ul li span{
@@ -458,7 +461,7 @@ span {
 	bottom: 25px;
 	border-top: 1.5px solid black;
 	border-bottom: 2px solid black;
-	max-width: 725px;
+	max-width: 800px;
 	margin-top: 75px;
     margin-left: auto;
     margin-right: auto;
@@ -537,7 +540,7 @@ span {
 	min-height: 56px;
 }
 #resume .work .two{
-	min-height: 56px;
+	min-height: 68px;
 }
 
 /*back to top */
