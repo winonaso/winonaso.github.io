@@ -20,7 +20,7 @@ $( document ).ready(function() {
 $('#scrolldown').click(function(event){
     event.preventDefault();
     var n = $('.video-container').height();
-    $('html, body').animate({scrollTop: n}, 50);
+    $('html, body').animate({scrollTop: n}, 800);
 })
 
 });
