@@ -286,7 +286,7 @@ hr {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	text-align: left;
-	padding-left: 2px;
+	padding-left: 3px;
 	display: block;
 }
 .cat ul li a{
@@ -558,7 +558,17 @@ span {
    -webkit-transition: opacity .25s ease-in-out;
 }
 
-@media (max-width: 740px) {
+@media (max-width: 1199px){
+	#projects{
+		width: 900px;
+	}
+}
+@media (max-width: 900px) {
+	.section{
+		max-width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
 	.section .triplethreat {
 		max-width: 300px;
 		text-align: center;
@@ -595,6 +605,7 @@ span {
 	#categories li{
 		display: block;
 		width: 100%;
+		margin: 0;
 	}
 	.project .section .info {
 		width: auto;
@@ -614,7 +625,7 @@ span {
 	}
 	.mainimage{
 		overflow: visible;
-		padding-left: none;
+		padding-left: 0;
 		margin-top: 10px;
 	}
 	.maintext{
