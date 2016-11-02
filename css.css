@@ -484,13 +484,13 @@ span {
 	border-bottom: none;
 }
 #resume .skills .one{
-	width: 145px;
+	width: 124px;
 }
 
 #resume .work{
 	margin-top: 25px;
     margin-left: 12px;
-    height: 215px;
+    height: 178px;
 }
 #resume .work .two, #resume .edu .two{
 	text-align: center;
@@ -512,7 +512,7 @@ span {
 	height: 185px;
 }
 #resume .edu .one{
-	width: 270px;
+	width: 262px;
 }
 #resume .edu .one em{
 	text-transform: none;
@@ -524,7 +524,7 @@ span {
 }
 #resume .edu .ryer{
 	border-bottom: 1px solid black;
-	height: 73px;
+	height: 53px;
 }
 #resume .edu #uw{
 	height: 55px;
@@ -539,7 +539,7 @@ span {
 	min-height: 56px;
 }
 #resume .work .two{
-	min-height: 68px;
+	min-height: 66px;
 }
 
 /*back to top */
