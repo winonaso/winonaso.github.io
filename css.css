@@ -559,12 +559,12 @@ span {
    -webkit-transition: opacity .25s ease-in-out;
 }
 
-@media only screen and (max-device-width: 1199px){
+@media only screen and (max-width: 1199px){
 	#projects{
 		width: 900px;
 	}
 }
-@media only screen and (max-device-width: 900px) {
+@media only screen and (max-width: 900px) {
 	.section{
 		max-width: 100%;
 		margin-left: 0;
