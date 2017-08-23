@@ -50,6 +50,10 @@ h2 {
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 13px;
 }
+#thesislink{
+	margin-top: 450px;
+	text-align: center;
+}
 #homepage.main #navi {
 	position: absolute;
 	top: 35%;
