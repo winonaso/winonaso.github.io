@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>Winona So</title>
 		<link rel="stylesheet" href="thesis/css.css">
+		<link rel="stylesheet" href="css.css">
 		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Quicksand" rel="stylesheet">
 		<script src="https://use.fontawesome.com/3904c65b13.js"></script>
 		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -11,15 +12,20 @@
 	</head>
 	<body id="home">
 		<div id="top">
+			<a href="index.html"><img src ="images/logo.png" id="logo"></a>
 	        <div id="titlewrapper">
-	        	<a href="www.winonaso.com"><img src ="images/logo.png" id="logo"></a>
 	            <h1>AvatarMe: Digital Avatars in a Theme Park Queue</h1>
 	            <h2>Creating a better experience and an emotional connection</h2>
 	        </div>
+	        <ul class="nav">
+	            <li><a href="about.html">about</a></li>
+				<li><a href="projects.html">projects</a></li>
+				<li><a href="connect.html">connect</a></li>
+	        </ul>
 	    </div>
 		<div class="white">
 			<div class="inner">
-				<img src="thesis/top.jpg" width="900px">
+				<img id="thesissplash" src="thesis/top.jpg">
 				<p>Theme parks are environments that encapsulate retail stores, attractions, rides, and characters, all wrapped together with a made-up story to create an emotional story for guests. In order to tell this story, parks attempt to integrate parts of the story in all aspects throughout the park.</p>
 				<P>While theme parks have begun to embrace more digital applications like park-specific mobile applications for maps and queue times, or more complex park-wide integrations like the Disney MagicBand, there has not been a digital approach designed for alleviating the tedium moments in the queue. Queues are an inevitable part of a guest’s experience in theme parks.</p>
 			</div>
@@ -69,9 +75,9 @@
 				<h2>online survey</h2>
 				<p>The survey was live for 30 days at which point 58 responses were collected. Out of the 58 responses, 3 responses were under the age of 18, and were completely removed from the results.</p>
 				<p><div id="smartphoneuse" style="width: 900px; height: 500px;"></div>
-					<table class="columns">
+					<table class="columns" id="thesischarts">
 						<tr>
-							<td><div id="snapchatuse" style="width: 450px; height: 250px;"></div></td>
+							<td><div id="snapchatuse" style="max-width: 450px; height: 250px;"></div></td>
 							<td><div id="facechart" style="width: 450px; height: 250px;"></div></td>
 						</tr>
 					</table>
@@ -100,26 +106,13 @@
 				<p>Payment services must be integrated throughout the park to ensure accessibility and convenience for guests.</p>
 				<p>Merchandising options is another important consideration of the engage stage. Since these digital avatars exist only in the digital realm, there is an opportunity to make them into real figurines that guests can purchase and bring home. This would encourage guests to find their favourite costumes and outfits throughout the park. </p>
 				<h2>Exit</h2>
-				<p><img src="thesis/both_step3.jpg" height="400px"></p>
+				<p><img src="thesis/both_step3.jpg" width="800px"></p>
 				<p>The exit stage is one of the final stages – it is how the experience appears to end for most users. This occurs when the guest has finished with the day (or trip) at the park, and has finished their last interaction with the avatar system. Prompting the guest to share their avatar through social media will help grow the platform, and create a community. Sharing content with people out of the trip can actually trigger reflection and a new interpretation of the current experience (Moores, 2003). As part of the exit stage of each application interaction or screen interaction is reminding guests how they can change their avatars outfits as soon as they earn a new outfit, and making it easy for them to share.</p>
 				<h2>Extend</h2>
 				<p>The extend stage is the stage that happens after the guest has left the park. The extend stage is just as important as the beginning engagement stages because players still feel connected to their avatars far after they have stopped playing the game (Boudreau, 2007). Customization increases the value of the character for the player. In Turkay’s study, she observed that users had an increased attachment over sessions – the more that the player interacted with the avatar; the more likely they were to come back and interact with the avatar again (2013).</p>
 				</div>
 		</div>
-		<div class="grey" id="about">
-			<div class="inner">
-				<h1>about</h1>
-				<img src="thesis/me.jpg" />
-				<div id="abouttext">
-					<p>Hi!</p>
-					<p>I'm currently a student at Ryerson University, finishing my thesis for my Masters of Digital Media.</p>
-					<p>I'm a graphic designer who focuses on the human experience.</p>
-					<p>Please feel free to email me about my research, or get more information about what I do!</p>
-					<p>If you'd like to view my portfolio, direct yourself <a href="www.winonaso.com">here</a>.</p>
-				</div>
-			</div>
-		</div>
-		<div class="white">
+		<div class="grey">
 			<div class="inner">
 				<h1>acknowledgements</h1>
 				<div id="ack">
@@ -131,7 +124,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="grey">
+		<div class="white">
 			<div class="inner">
 				<h1>references</h1>
 				<div id="ref">
@@ -153,37 +146,13 @@
 				</div>
 			</div>
 		</div>
-		<div class="white">
-			<div class="inner">
-				<h1>contact me</h1>
-				<div>
-					<p>If you'd like to contact me about my research, or anything else, feel free to drop me a line!</p>
-					<div id="contactspecial">
-						<ul id="connect">
-						<li>
-							<a href="mailto:winona@winonaso.com?Subject=Connect%20With%20You">
-							<i class="fa fa-envelope-open fa-2x" aria-hidden="true"></i><br>
-							email</a>
-						</li>
-						<li>
-							<a href="https://www.twitter.com/winonaso">
-							<i class="fa fa-twitter fa-2x" aria-hidden="true"></i><br>
-							twitter</a>
-						</li>
-						<li>
-							<a href="https://www.linkedin.com/in/winonaso">
-							<i class="fa fa-linkedin fa-2x" aria-hidden="true"></i><br>
-							linkedin</a>
-						</li>
-						<li>
-							<a href="index.html">
-							<i class="fa fa-home fa-2x" aria-hidden="true"></i><br>
-							portfolio</a>
-						</li>
-						</ul>
-					</div>
-				</div>
-			</div>
+		<div class="grey">
+			<a class="largeurl" href="projects.html">back to projects</a>
+			<ul class="nav projectnav">
+				<li><a href="about.html">about</a></li>
+				<li><a href="projects.html">projects</a></li>
+				<li><a href="connect.html">connect</a></li>
+			</ul>
 		</div>
 	</body>
 </html>

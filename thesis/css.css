@@ -6,6 +6,13 @@ h1, h2{
 	font-family: 'Playfair Display', serif;
 	font-weight: normal;
 }
+#thesissplash{
+	max-width: 90%;
+	margin-top: 40px;
+}
+#recommend img{
+	max-width: 90%;
+}
 h1{
 	text-align: center;
 }
@@ -20,10 +27,18 @@ a:hover{
 	color: #01A2A6;
 	text-decoration: none;
 }
+#thesischarts{
+	max-width: 90%;
+}
+.projectsnav{
+	display: block;
+	text-align: right;
+	float: none;
+}
 /* White & Grey Divs */
 .white, .grey{
 	clear: both;
-	padding: 20px;
+	padding: none;
 	text-align: center;
 }
 .grey{
