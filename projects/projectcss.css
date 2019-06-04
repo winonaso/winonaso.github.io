@@ -9,7 +9,12 @@ h3{
 .mainimg{
 	float: right;
 	margin: 0;
-	max-width: 50%
+	max-width: 50%;
+}
+.mainimgtulip{
+	float: right;
+	margin: 0;
+	max-width: 40%;
 }
 .imgmar{
 	margin-top: 0;
@@ -28,12 +33,44 @@ h3{
 	width: 500px;
 	margin-top: -90px;
 }
+.middleparagraph{
+	margin: 0;
+	width: 500px;
+}
 p{
 	font-size: 13px;
 }
 img{
 	margin: 20px;
 	max-width: 100%
+}
+#tulipfinal{
+	margin: 0 auto;
+	text-align: center;
+}
+#tulip em{
+	color: #01A2A6;
+
+}
+#tulip .introductiontext{
+	float: none;
+}
+#tulip .introductionpanel{
+	margin: 0 auto;
+    width: 900px;
+}
+#tulip .toplevel{
+	    text-align: center;
+}
+#tulip .largeurl{
+	width: 110px;
+	text-transform: lowercase;
+}
+#tulip .tlargeurl{
+	display: inline-block;
+}
+#tulip #tools{
+	max-width: none;
 }
 @media only screen and (max-width: 950px){
 	.topparagraph{
