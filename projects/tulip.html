@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Winona So</title>
+		<link rel="stylesheet" href="../css.css">
+		<link rel="stylesheet" href="projectcss.css">
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Quicksand" rel="stylesheet">
+		<script src="https://use.fontawesome.com/3904c65b13.js"></script>
+	</head>
+	<body class="projpage" id="tulip">
+		<div id="top">
+			<a href="../index.html"><img src ="../images/logo.png" id="logo"></a>
+	        <div id="titlewrapper">
+	            <h1>tulip retail assignment</h1>
+	        </div>
+	        <ul class="nav">
+	            <li><a href="../about.html">about</a></li>
+				<li><a href="../projects.html">projects</a></li>
+				<li><a href="../connect.html">connect</a></li>
+	        </ul>
+	    </div>
+
+		<div class="white">
+			<div class="inner">
+				<div class="introductionpanel toplevel">
+					<img src="../tulip/images/animated.png">
+					<center>
+					<p class="tlargeurl"><a class="largeurl" href="../tulip/mobile-associate-app.html">Live Page</a></p>
+					<p class="tlargeurl"><a class="largeurl" href="https://github.com/winonaso/tulip">GitHub Link to Files</a></p>
+				</center>
+				</div>
+			</div>
+		</div>
+		<div class="grey">
+			<div class="inner">
+				<div class="middleparagraph">
+					<h1>Design Process</h1>
+					<h2>Identify Design Problem</h2>
+					<p>The first step was to determine what area I wanted to redesign - and why. While looking through the site, and speaking to the Interviewers, I realized that Tulip had recently launched the Turnkey solution - and I felt that the fact there were actually three different versions of the application wasn't clear enough from the get go.</p>
+					<p>I decided that I would flush out the three options so that Tulip clients could better understand the options and flexibility that the Tulip application would give them.</p>
+				</div>
+			</div>
+		</div>
+		<div class="white">
+			<div class="inner">
+				<div class="introductionpanel">
+					<img class="mainimg" src="../tulip/images/sketch.png">
+					<div class="introductiontext">
+						<h2>Sketching</h2>
+						<p>I start most of my design work with a basic sketch, even if it's a very rough wireframe of what I want the page to look like. Sometimes the wireframe is done in Photoshop directly, but other times, I want the flexibility of being able to sketch quickly and draw arrows.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grey">
+			<div class="inner">
+				<div class="introductionpanel">
+					<img class="mainimgtulip" src="../tulip/images/basictext.png">
+					<div class="introductiontext">
+						<h2>Basic HTML</h2>
+						<p>Once I had the sketch done, I had a pretty good idea of how I wanted to layout the page and could begin with basic HTML. The only CSS I added at this point was some background colours so I could ensure that I closed my DIVs correctly.</p>
+						<p>I started by adding in all the basic text of the page, and the basic frame of the DIVs - I wasn't worried about the page looking pretty quite yet. I also just had placeholder image that lead to dead images as I knew I would need them at some point - this would also make it easier to drop in the images as needed.</p>
+						<p>You'll also actually notice I didn't close my DIVs properly in the first large image DIV - there is no margin between those. I realize this later one when I start styling the CSS and fix it.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="white">
+			<div class="inner">
+				<div class="introductionpanel">
+					<img class="mainimgtulip" src="../tulip/images/basiccss.png">
+					<div class="introductiontext">
+						<h2>Basic CSS</h2>
+						<p>The next step is to add in the fonts, and removing any of the list decorations, unecessary indentation, and general tidying up of the page. I also began adding margins as needed for the image pages, and adjusting the size of the headers and text.</p>
+						<p>I also changed the background colours of each DIV to a light grey so I could better see what the page would eventually look like. I added some basic colours - the pink bars, and navigational colours.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grey">
+			<div class="inner">
+				<img class="mainimg" src="../tulip/images/three_options.png">
+				<div class="introductionpanel">
+					<div class="introductiontext">
+						<h2>Three Solutions</h2>
+						<p>The first peice I started constructing with CSS was the three solutions. I decided to add the more details links directly inside each of the options so it was very clear which option you were getting more details about.</p>
+						<p>To build this, I used DIVs in order to create each item. Each header was a DIV with the correct background colour, and the entire block was also wrapped in a div to give it the border colour. Additionally, inside the main DIV, I created an unordered list with the different features of the solutions. The more details button was also created by using a DIV, and adding rounded corners via CSS.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="white">
+			<div class="inner">
+				<div class="introductionpanel">
+					<img class="mainimgtulip" src="../tulip/images/images.png">
+					<div class="introductiontext">
+						<h2>Main Content</h2>
+						<p>I cleaned up the main content, adding in images of the iPad (from Tulip's site). I did not choose the main images yet, as I wanted to work on the actual formatting and placing the text properly before I started with the imagery.</p>
+					</div>
+					<img src="../tulip/images/images2.png">
+					<img src="../tulip/images/images3.png">
+				</div>
+			</div>
+		</div>
+		<div class="grey">
+			<div class="inner">
+				<img class="mainimg" src="../tulip/images/solutions.png">
+				<div class="introductionpanel">
+					<div class="introductiontext">
+						<h2>Solutions</h2>
+						<p>Next piece to fix up was the solutions. The images were floated left, when they needed to be floated right. By using floats, it also meant I needed to set the overflow to <em>auto</em> in order for the margins on each section to wrap around the items that were being floated.</p>
+						<p>Another thing I noticed while working on the solutions was that the font wasn't quite right - I had been using AkagiPro-Light instead of AkaiPro - Thin the entire time. This was a quick fix of converting the <em>.otf</em> into a <em>.woff</em> and changing the CSS page to reflect the file name change.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="white">
+			<div class="inner">
+				<img src="../tulip/images/navbar.png">
+				<div class="introductionpanel">
+					<div class="introductiontext">
+						<h2>Navigation bar</h2>
+						<p>I added in the look of the main navigation bar as on the main Tulip page with CSS, as well as the social media icons.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grey">
+			<div class="inner">
+				<div class="introductionpanel">
+					<img src="../tulip/images/panel.png">
+					<div class="introductiontext">
+						<h2>Bring it to life/See Tulip in action</h2>
+						<p>On each of the Tulip pages, there are two large buttons at the bottom of each page which I styled and added to my own page. This is where I read up more on using flex in order to make the two large buttons span across the entire width evenly, and center the text in the middle.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="white">
+			<div class="inner">
+				<div class="introductionpanel">
+					<img class="mainimgtulip" src="../tulip/images/largeimages1.png">
+					<div class="introductiontext">
+						<h2>Images</h2>
+						<p>I set up the large images on the page to have a DIV on top of the base image with an opacity of 30% in the Tulip dark blue color in order to tint the photo - and had the text on top of the image in another DIV in order to keep the correct colouring of the text. However, I realized that the images on the Tulip site were actually tinted not with CSS, but baked into the images which meant I could remove my tinting DIV, and just leave the images as is.</p>
+					</div>
+					<img src="../tulip/images/largeimages2.png">
+				</div>
+			</div>
+		</div>
+		<div class="grey">
+			<div class="inner">
+				<div class="introductionpanel">
+					<img src="../tulip/images/footer.png">
+					<div class="introductiontext">
+						<h2>Footer</h2>
+						<p>This was a simple recreation of the current Tulip footer, and at this point, I was pretty much finished.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="white">
+			<div class="inner">
+				<div class="introductionpanel">
+					<img class="mainimg" src="../tulip/images/cleanup.png">
+					<div class="introductiontext">
+						<h2>Cleaning it Up</h2>
+						<p>This was a matter of cleaning up any weird indentations in my code, editing any typos in the text I may have created, adding in a bit more padding where needed, and just general cleanup.</p>
+						<p>I also added the little things that really wrap up a page - on hover effects and colour emphasises. I also took a look at existing Tulip pages, as well as the Tulip branding guide to ensure that the correct colours were used, and small touches like the small pink bars were added in.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grey">
+			<div class="inner">
+				<div class="introductionpanel">
+					<div class="introductiontext" id="tools">
+						<h2>Tools Used</h2>
+						<p>For this project, I coded the project in <em>Sublime Text 2</em> (with <em>Solarized - Light</em> color scheme!). The website uses <em>HTML</em>, <em>CSS</em>, and primarily uses DIVs for content organization and positioning. As I worked on the website more, I began to incorporate <em>Flexbox</em> to simplify alignment and adjustment of the different sections of the website.</p>
+						<p>Colours and icons were edited in <em>Adobe Photoshop</em>. I also used Adobe Photoshop as well as <a href="www.apngasm.sourceforge.net">APNG Assembler</a> to create the animated PNG at the top and bottom of this page.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="white">
+			<div class="inner">
+				<div class="introductionpanel toplevel">
+					<img src="../tulip/images/animated.png">
+					<center>
+					<p class="tlargeurl"><a class="largeurl" href="../tulip/mobile-associate-app.html">Live Page</a></p>
+					<p class="tlargeurl"><a class="largeurl" href="https://github.com/winonaso/tulip">GitHub Link to Files</a></p>
+				</center>
+				<div class="topparagraph" id="tulipfinal">
+					<h2>Things I Would Change</h2>
+					<p>If I were to redo this assignment, one major item I would change would be the implementation of the three solutions divs. By using DIVs and floats, I kept on running into weird bugs and errors which were very difficult to fix. If I were to redo this section, I would read up on Flexbox (which I have never used), in order to have each of the solutions acting as a child of a larger parent container instead. This would reduce the headache and difficulties I had using floats and the DIVs in general.</p>
+					<p>Additionally, I think I would want to brush up on my HTML some more, as using <em>floats</em> in general is not a sustainable or modern way of using DIVs.</p>
+					<p>Finally, I would also want to implement a mobile-friendly version of my page.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grey">
+			<ul class="nav projectnav">
+				<li><a href="../about.html">about</a></li>
+				<li><a href="../projects.html">projects</a></li>
+				<li><a href="../connect.html">connect</a></li>
+			</ul>
+		</div>
+	</body>
+</html>

@@ -198,6 +198,8 @@ a:hover{
 /* Connect */
 #connect{
 	padding: 0;
+    margin: 0 auto;
+    width: 500px;
 }
 #connect li{
 	display: inline;
@@ -214,6 +216,8 @@ a:hover{
 /* Projects Page */
 .bigproj, .smallproj{
 	margin-bottom: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
 	font-size: 13px;
 }
 .smallproj{
@@ -244,11 +248,12 @@ a:hover{
 	text-align: right;
 	padding-right: 20px;
 	vertical-align: top;
+	border-right: black dotted 2px;
+
 }
 .resumeright{
 	text-align: left;
 	padding-left: 20px;
-	border-left: black dotted 2px;
 }
 #resume h2{
 	margin-bottom: 0;
@@ -288,6 +293,7 @@ a:hover{
 }
 #resume ul{
 	padding: 0;
+    margin-top: 5px;
 }
 @media only screen and (max-width: 1000px){
 	#minihomepageimage{
@@ -348,9 +354,6 @@ a:hover{
 /* projects */
 	#projects #projectlinks{
 		margin-top: 0;
-	}
-	.bigproj img{
-		max-width: 350px;
 	}
 @media only screen and (max-width: 840px){
 }
