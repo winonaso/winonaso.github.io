@@ -1,0 +1,268 @@
+body{
+	font-family: Quicksand, sans-serif;
+	color: #000;
+	display: flex;
+	justify-content: center;
+}
+#main{
+	flex: 1;
+	padding-top: 150px;
+	padding-left: 50px;
+	padding-right: 50px;
+	z-index: 1;
+}
+#background{
+	flex: 1;
+	position: relative;
+} 
+#logo{
+	display: none;
+	align-self: center;
+}
+.logoimg{
+	max-width: 150px;
+	margin-top: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+	body{
+		flex-direction: column;
+	}
+	#logo{
+		display: block;
+	}
+	#main{
+		padding-top: 10px;
+	}
+	#background{
+		display: none;
+	}
+}
+
+/* bg magic */
+
+@keyframes bgAnim {
+	0%{
+		transform: translate(0,0)
+	}
+	25% {
+		transform: translate(5px,0)
+	}
+	50% {
+		transform: translate(5px,5px)
+	}
+	75% {
+		transform: translate(0px, 5px)
+	}
+}
+
+.bgImg{
+	animation-name: bgAnim;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	position: absolute;
+	top: 5%;
+	left: -10%;
+	width: 120%;
+	height: 95%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	opacity: 1;
+}
+
+.l1 {
+	animation-delay: 0;
+	background-image: url("images/greydesk.png");
+}
+.l2 {
+	animation-delay: 2s;
+	background-image: url("images/pinkdesk.png");
+}
+.l3 {
+	animation-delay: 4s;
+	background-image: url("images/greendesk.png");
+
+}
+h1, h2{
+	font-family: Playfair Display, serif;
+	font-weight: 400;
+}
+ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+li{
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+#main img{
+	width: 110px;
+}
+
+#iconbar i{
+	padding: 10px;
+}
+
+a{
+	color: #ff8af7;
+	text-decoration: none;
+	font-size: 25px;
+	font-weight: bold;
+}
+a:hover{
+	color: #a9ffd5 ;
+}
+
+#factoid{
+	margin-bottom: 40px;
+}
+#stickybottomnav{
+	bottom: 0%;
+	position: fixed;
+	padding-bottom: 50px;
+	right: 50px;
+}
+.back{
+	font-size: 15px;
+}
+/* thesis */
+#thesis{
+	margin: auto;
+	max-width: 500px;
+		font-size: 13px;
+}
+#thesis img{
+	max-width: 500px;
+
+}
+#table{ 
+	display: flex;
+}
+#table div{
+	padding: 10px;
+}
+#table img{
+	width: 200px;
+}
+@media only screen and (max-width: 840px) {
+	#table{
+		flex-wrap: wrap;
+	}
+}
+#thesis, #resume{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+#research{
+	text-align: left;
+}
+#references{
+	list-style-type: none;
+	padding-left: 1.5em;
+	text-indent:-1.5em;
+	margin-bottom: 5px;
+}
+#thesis ol{
+	margin-left: 200px;
+}
+#references li, #research li{
+	font-size: 13px;
+	text-align: left;
+}
+#research ol{
+	padding-left: 20px;
+	margin: 0;
+}
+#research ul{
+	list-style: disc;
+	padding-left: 20px;
+} 
+#references a{
+	font-size: 15px;
+	color: #000;
+}
+/* resume */
+#resume{
+	text-align: center;
+}
+.resumeleft, .resumeright{
+	width: 400px;
+	display: inline-block;
+}
+
+.resumeleft{
+	text-align: right;
+	padding-right: 20px;
+	vertical-align: top;
+	border-right: black dotted 2px;
+
+}
+
+.resumeright{
+	text-align: left;
+	padding-left: 20px;
+}
+#resume h2{
+	margin-bottom: 0;
+	margin-top: 30px;
+}
+#resume h3, #resume h4{
+	display: inline-block;
+	margin: 0;
+}
+#resume .double{
+	display: inline-block;
+}
+#resume h3{
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 20px;
+}
+#resume #firsth3{
+	margin-top: 12px;
+}
+#resume h4{
+	font-weight: normal;
+}
+#resume p{
+	font-size: 14px;
+}
+#resume p:first-child{
+	margin-top: 0;
+}
+ #resume .time{
+ 	font-size: 12px;
+ }
+.resumeleft ul li, .resumeright ul li{
+	list-style: none;
+	margin-bottom: 5px;
+	font-size: 13px;
+}
+.resumeleft ul li{
+	text-align: right;
+}
+.resumeright ul li{
+	text-align: left;
+}
+#resume ul{
+	padding: 0;
+	margin-top: 5px;
+}
+@media only screen and (max-width: 880px) {
+	.resumeleft, .resumeright{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0;
+	}
+	.resumeleft{
+		text-align: left;
+		border-right: none;
+	}
+	.resumeleft ul li {
+		text-align: left;
+	}
+}
