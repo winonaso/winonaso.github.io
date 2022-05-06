@@ -1,6 +1,6 @@
 function getFactoid(){
 
-var ar = new Array (8)
+var ar = new Array (7)
 ar[0] = 'I also like mechanical keyboards. <i class="fas fa-keyboard"></i>'
 ar[1] = 'I also love to play indie video games. <i class="fas fa-gamepad-alt"></i>'
 ar[2] = 'I also have a chihuahua mix named Scotch. <i class="fas fa-dog"></i>'
