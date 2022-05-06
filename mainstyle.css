@@ -1,5 +1,5 @@
 body{
-	font-family: Quicksand, sans-serif;
+	font-family: Roboto Flex, sans-serif;
 	color: #000;
 	display: flex;
 	justify-content: center;
@@ -87,6 +87,13 @@ h1, h2{
 	font-family: Playfair Display, serif;
 	font-weight: 400;
 }
+h1{
+	font-size: 90px;
+	margin-bottom: 0;
+}
+h2{
+	font-size: 40px;
+}
 ul{
 	list-style: none;
 	margin: 0px;
@@ -110,7 +117,7 @@ a{
 	color: #ff8af7;
 	text-decoration: none;
 	font-size: 25px;
-	font-weight: bold;
+	font-family: Playfair Display, serif;
 }
 a:hover{
 	color: #a9ffd5 ;
@@ -144,7 +151,7 @@ a:hover{
 /* thesis */
 #thesis{
 	margin: auto;
-	max-width: 500px;
+	max-width: 800px;
 	font-size: 13px;
 }
 #thesis img{
@@ -168,6 +175,12 @@ a:hover{
 #thesis, #resume, #pickingdandelions{
 	margin-top: 50px;
 	margin-bottom: 50px;
+}
+#thesis h1, #resume h1, #pickingdandelions h1{
+	font-size: 70px;
+}
+#thesis h2, #resume h2, #pickingdandelions h2{
+	font-size: 30px;
 }
 #research{
 	text-align: left;
