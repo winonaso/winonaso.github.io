@@ -136,6 +136,10 @@ a:hover{
 	font-size: 15px;
 }
 
+#shorterpara{
+	max-width: 500px;
+}
+
 /* pickingdandelions */
 #pickingdandelions{
 	margin: auto;
